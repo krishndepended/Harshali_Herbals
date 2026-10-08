@@ -1,895 +1,1455 @@
 <!DOCTYPE html>
-<html lang="en" style="">
-
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
-        name="viewport">
-    <meta content="mobile_tab" name="shell-type">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-container-highest": "#e4e2de", "tertiary-fixed": "#ffe088", "surface-container-low": "#f5f3ef", "secondary": "#486641", "error": "#ba1a1a", "on-surface-variant": "#42493e", "outline": "#72796e", "secondary-fixed-dim": "#aed0a3", "on-error": "#ffffff", "outline-variant": "#c2c9bb", "secondary-container": "#c7e9bb", "tertiary": "#735c00", "surface-dim": "#dbdad6", "tertiary-fixed-dim": "#e9c349", "on-error-container": "#93000a", "on-primary-fixed-variant": "#23501e", "on-tertiary-container": "#4f3d00", "on-primary-container": "#9dd090", "primary-container": "#2d5a27", "primary": "#154212", "surface-variant": "#e4e2de", "primary-fixed": "#bcf0ae", "on-secondary-fixed-variant": "#314e2c", "tertiary-container": "#cca730", "on-tertiary-fixed": "#241a00", "inverse-on-surface": "#f2f0ed", "surface-container": "#efeeea", "on-secondary": "#ffffff", "surface-container-high": "#eae8e4", "on-secondary-container": "#4c6a45", "on-secondary-fixed": "#052105", "primary-fixed-dim": "#a1d494", "surface-bright": "#fbf9f5", "background": "#fbf9f5", "inverse-surface": "#30312e", "surface-container-lowest": "#ffffff", "on-surface": "#1b1c1a", "inverse-primary": "#a1d494", "secondary-fixed": "#c9ecbe", "on-background": "#1b1c1a", "on-primary-fixed": "#002201", "on-primary": "#ffffff", "surface-tint": "#3b6934", "on-tertiary-fixed-variant": "#574500", "surface": "#fbf9f5" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "3rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "display-lg": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script>
-    <style>
-        @layer base {
-
-            html,
-            body {
-                width: 100%;
-                margin: 0;
-                padding: 0;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Harshali Herbal | 100% Pure Natural Hair & Personal Care</title>
+  
+  <!-- Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1E3A1A",
+            "primary-container": "#2D5A27",
+            "primary-fixed": "#BCF0AE",
+            "on-primary": "#FFFFFF",
+            "secondary": "#486641",
+            "secondary-container": "#C7E9BB",
+            "surface": "#FDFBF7",
+            "surface-container-low": "#F5F3EF",
+            "surface-container": "#EFEEEA",
+            "surface-container-lowest": "#FFFFFF",
+            "on-surface": "#1B1C1A",
+            "on-surface-variant": "#42493E",
+            "outline-variant": "#C2C9BB",
+            "whatsapp": "#25D366",
+            "whatsapp-hover": "#20BD5A"
+          },
+          fontFamily: {
+            "headline-md": ["Playfair Display", "serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' }
             }
-
-            body {
-                overscroll-behavior-y: none;
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .pb-safe {
-                padding-bottom: env(safe-area-inset-bottom, 0px);
-            }
-
-            .pt-safe {
-                padding-top: env(safe-area-inset-top, 0px);
-            }
-
-            main>:first-child {
-                margin-top: 0 !important;
-            }
-
-            main>:last-child {
-                margin-bottom: 0 !important;
-            }
+          },
+          animation: {
+            marquee: 'marquee 16s linear infinite'
+          }
         }
-
-        ::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
+      }
+    }
+  </script>
+  
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    html { -webkit-tap-highlight-color: transparent; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
 </head>
 
-<body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col">
-    <header
-        class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(30,58,26,0.04)]">
-        <div
-            class="bg-primary-container text-on-primary py-1 px-4 text-center flex items-center justify-center gap-1.5 overflow-hidden">
-            <span class="material-symbols-outlined text-[13px] text-tertiary-fixed">eco</span>
-            <p class="font-label-sm text-label-sm tracking-wide truncate">Har Ghar Harshali | 100% Natural • Handmade •
-                Pure Herbal</p>
-        </div>
-        <div class="h-16 px-4 max-w-md mx-auto flex items-center justify-between gap-space-sm">
-            <div class="flex items-center"><img alt="Harshali Herbal" class="h-12 w-auto object-contain"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW-MBfqMiIeNe4XcMRJ1uGGRJH9IvT4pXrIMAiGxyoRL-2tBy4pNODOZe8ccAq4nsAv3nI_tPYf2i7ELgsWN_wR9mEKEna0k7oqqCVeHxuv1PTAwQAWnRZfjX501ZhObsiJf9OttFw6R92-8UB6PIGC64sjl9URAKpRPxFNenZyruf4LrLyYvctbXUUiqlhv3DFcbGbZj7lcJthtI3u3eTjvFhRNo3bPUsSAM9izZSqeinPzkCxgDv5zNqZW1TZNqkyug">
-            </div>
-            <div class="flex items-center gap-space-xs"><a
-                    class="min-h-[40px] px-3.5 bg-primary text-on-primary flex items-center justify-center gap-1.5 rounded-full hover:bg-primary-container transition-colors shadow-sm active:scale-[0.98]"
-                    href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span
-                        class="material-symbols-outlined text-[18px] text-tertiary-fixed">chat</span><span
-                        class="font-label-md text-label-md font-medium">WhatsApp Us</span></a></div>
-        </div>
-    </header>
-    <main class="flex-1 flex flex-col relative w-full max-w-md mx-auto pt-20 pb-32 px-4 bg-surface">
-        <div class="flex flex-col w-full space-y-7">
-            <!-- HERO SECTION -->
-            <section class="flex flex-col space-y-4 pt-1">
-                <div class="flex items-center gap-2">
-                    <span
-                        class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
-                        <span class="material-symbols-outlined text-[13px] text-primary">verified</span> 100% Ayurvedic
-                    </span>
-                    <span
-                        class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
-                        <span class="material-symbols-outlined text-[13px] text-tertiary">cloud_upload</span>
-                        Small-Batch Fresh
-                    </span>
-                </div>
-                <div class="space-y-1.5">
-                    <h1
-                        class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight leading-tight">
-                        Herbal Roots, <br><span class="italic font-normal">Health Results.</span>
-                    </h1>
-                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                        Natural care inspired by traditional herbal ingredients for everyday hair routines. Pure,
-                        handcrafted, and lovingly prepared.
-                    </p>
-                </div>
-                <!-- Quick Action CTA Group -->
-                <div class="flex items-center gap-2 pt-1">
-                    <a class="flex-1 min-h-[44px] py-2 px-3 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform"
-                        href="#featured-remedies">
-                        <span class="">Shop Formulations</span>
-                        <span class="material-symbols-outlined text-[16px]">arrow_downward</span>
-                    </a>
-                    <a class="flex-1 min-h-[44px] py-2 px-3 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform"
-                        href="https://wa.me/?text=Hello%20Harshali%20Herbal%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products."
-                        rel="noopener noreferrer" target="_blank">
-                        <span class="material-symbols-outlined text-[16px] text-primary">chat</span>
-                        <span class="">Order on WhatsApp</span>
-                    </a>
-                </div>
-                <!-- Hero Showcase Visual -->
-                <div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm mt-1">
-                    <img alt="Handmade pure herbal hair care range collection"
-                        class="w-full aspect-[16/10] object-cover"
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1W-9bl_Kyn-O6zyr0ZuyJ_PJNHAL1N4wJwTMQZwlCEgs9W-VIFHEBOoWE7RPdHgWYfqRIVX50AcHjTHw6-YXlLfcxuT8RNQTrfj-vCIC66seNsz5qTyobU_d9OOSvk7XA27BjJT4OGC4PpT2FZgVB2A4oGJoyxMtO6tRkcrWf4xyI6a1PciSkvttY46Ds4Y03z4S6ciO2-nOWYUEuRTjjEScgPHXh_HOte5RAmYCNahir0kZPc1kj3si3c">
-                    <div
-                        class="absolute bottom-2.5 left-2.5 right-2.5 p-2 rounded-xl bg-surface/90 backdrop-blur-md flex items-center justify-between shadow-sm">
-                        <div class="flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-primary text-[18px]">nature</span>
-                            <span class="font-label-sm text-label-sm text-primary font-semibold">Handmade Pure Herbal
-                                Range</span>
-                        </div>
-                        <span
-                            class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-medium">Fresh
-                            Batch</span>
-                    </div>
-                </div>
-                <!-- Trust bar -->
-                <div
-                    class="w-full py-2.5 px-3 rounded-xl bg-surface-container flex items-center justify-around text-center">
-                    <div class="flex items-center gap-2">
-                        <span class="material-symbols-outlined text-primary text-[20px]">groups</span>
-                        <div class="flex flex-col text-left">
-                            <span
-                                class="font-label-md text-label-md text-on-surface font-semibold leading-tight">15,000+</span>
-                            <span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Happy
-                                Scalps</span>
-                        </div>
-                    </div>
-                    <div class="h-6 w-px bg-surface-container-highest"></div>
-                    <div class="flex items-center gap-2">
-                        <span class="material-symbols-outlined text-tertiary-container text-[20px]"
-                            style="font-variation-settings: 'FILL' 1;">star</span>
-                        <div class="flex flex-col text-left">
-                            <span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">4.9 /
-                                5.0</span>
-                            <span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Verified
-                                Rating</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<body class="font-body-md text-on-surface bg-surface flex justify-center min-h-screen antialiased select-none pb-20">
 
-            <!-- VALUE PILLARS (EQUAL-HEIGHT 2x2 GRID) -->
-            <section class="space-y-3">
-                <div class="flex items-center justify-between">
-                    <span
-                        class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Ayurvedic
-                        Integrity</span>
-                    <span class="font-label-sm text-label-sm text-on-surface-variant">Pure Potency</span>
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Pillar 1 -->
-                    <div
-                        class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-start space-y-1.5">
-                        <div
-                            class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined text-[16px]">compost</span>
-                        </div>
-                        <span class="font-title-md text-title-md text-on-surface font-semibold leading-snug">100%
-                            Natural</span>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Hand-selected
-                            botanical herbs and raw extracts.</p>
-                    </div>
-                    <!-- Pillar 2 -->
-                    <div
-                        class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-start space-y-1.5">
-                        <div
-                            class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined text-[16px]">local_pharmacy</span>
-                        </div>
-                        <span class="font-title-md text-title-md text-on-surface font-semibold leading-snug">Handmade
-                            Care</span>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Infused and blended
-                            patiently in artisanal small batches.</p>
-                    </div>
-                    <!-- Pillar 3 -->
-                    <div
-                        class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-start space-y-1.5">
-                        <div
-                            class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined text-[16px]">clean_hands</span>
-                        </div>
-                        <span class="font-title-md text-title-md text-on-surface font-semibold leading-snug">Pure
-                            Herbal</span>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Zero parabens,
-                            sulphates, artificial color, or harsh chemicals.</p>
-                    </div>
-                    <!-- Pillar 4 -->
-                    <div
-                        class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-start space-y-1.5">
-                        <div
-                            class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined text-[16px]">inventory_2</span>
-                        </div>
-                        <span class="font-title-md text-title-md text-on-surface font-semibold leading-snug">Neat
-                            Packaging</span>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Controlled artisanal
-                            batches dispatched fresh to your doorstep.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- FEATURED PRODUCTS (HORIZONTAL SWIPE CAROUSEL WITH CLEAN ALIGNMENT) -->
-            <section class="space-y-3" id="featured-remedies">
-                <div class="flex items-end justify-between px-0.5">
-                    <div>
-                        <span
-                            class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Core
-                            Remedies</span>
-                        <h2 class="font-headline-sm text-headline-sm text-on-surface">Fresh Herbal Blends</h2>
-                    </div>
-                    <div class="flex items-center gap-1 text-primary">
-                        <span class="font-label-sm text-label-sm font-semibold">Swipe</span>
-                        <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
-                    </div>
-                </div>
-                <!-- Product Carousel Container with balanced padding-left and padding-right -->
-                <div class="overflow-x-auto snap-x snap-mandatory flex gap-3.5 pb-2 no-scrollbar -mx-4 px-4">
-                    <!-- Product 1: Hair Oil -->
-                    <div
-                        class="w-[82vw] max-w-[320px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col overflow-hidden border border-outline-variant/30">
-                        <div class="relative w-full aspect-square bg-surface-container-low">
-                            <img alt="Harshali Herbal Hair Oil bottle with fresh herbs"
-                                class="w-full h-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida/AEtjO1UUf-nj1bIcPWzVYViL4lQx5tbZnw8vqM-gJFm0p7njRB5zEZ_z7iiqvO9ngAgoJ4zcxjeNdV8W34nFAZXNcYYhwCT0c5quC8CF2fLt4budbTeplK9nRZN8hhx0fcbzYbYzXP0JAEGCQC0oLoFsR84Lb5XhrkUMHT2tI5fTDzvNtZjlFGPrBOlyoI3Pn2pZwPmqktq73rJpODCIdJkfxpdEwB7EWtwFdPK6HAyW6iY3vL89lw-YXfEDyQSb">
-                            <div class="absolute top-3 left-3">
-                                <span
-                                    class="font-label-sm text-label-sm font-semibold px-2.5 py-1 rounded-full bg-primary text-on-primary shadow-sm">
-                                    Bestseller
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
-                            <div>
-                                <h3 class="font-title-lg text-title-lg text-on-surface">Harshali Herbal Hair Oil</h3>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Nourishing root-deep
-                                    tonic infused with 11 ancient herbs.</p>
-                            </div>
-                            <!-- Sizes & Price Table -->
-                            <div class="p-2.5 rounded-xl bg-surface-container-low space-y-1.5">
-                                <div
-                                    class="flex justify-between items-center text-on-surface font-label-md text-label-md">
-                                    <span class="text-on-surface-variant">100 ml bottle</span>
-                                    <span class="font-bold text-primary">₹350 <span
-                                            class="font-label-sm text-label-sm font-normal text-on-surface-variant">(+
-                                            Shipping)</span></span>
-                                </div>
-                                <div class="h-px bg-surface-container-highest"></div>
-                                <div
-                                    class="flex justify-between items-center text-on-surface font-label-md text-label-md">
-                                    <span class="text-on-surface-variant">180 ml bottle</span>
-                                    <span class="font-bold text-primary">₹550 <span
-                                            class="font-label-sm text-label-sm font-normal text-on-surface-variant">(+
-                                            Shipping)</span></span>
-                                </div>
-                            </div>
-                            <!-- Key Ingredients -->
-                            <div class="space-y-1">
-                                <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Active
-                                    Botanicals:</span>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                                    Amla, Bhringraj, Rosemary, Jatamasi, Brahmi, Khus/Vetiver, Curry Leaves, Neem,
-                                    Hibiscus, Coconut Oil, Sesame Oil.
-                                </p>
-                            </div>
-                            <!-- WhatsApp Action Button -->
-                            <a class="min-h-[44px] w-full py-2.5 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98] transition-transform"
-                                href="https://wa.me/?text=Hello%20Harshali%20Herbal%2C%20I%20would%20like%20to%20order%20Harshali%20Herbal%20Hair%20Oil."
-                                rel="noopener noreferrer" target="_blank">
-                                <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">chat</span>
-                                <span class="">Order on WhatsApp</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Product 2: Herbal Shampoo -->
-                    <div
-                        class="w-[82vw] max-w-[320px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col overflow-hidden border border-outline-variant/30">
-                        <div class="relative w-full aspect-square bg-surface-container-low">
-                            <img alt="Harshali Herbal Shampoo bottle with reetha and shikakai"
-                                class="w-full h-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida/AEtjO1XgsTzV1NiTXFf-na759-vXxN6ojwAWY2NOfGFv6hGnxj1hdPdWrxWmg4Th2arKMQc9dhVxemmK5L9m7IqAQGzcb6pdRfXAjZreKQob3mahriRR0N3-HRFciOJFU92ci0yWS8q4u7j334xX2QF7KvEwCps817zzba3jtKklSdi_ghzhYoFghf-4kI7ZvqRFxjzjTh2fwEg1Z8tOZMAvhvp3HwOxxgQjhcKFbcjswoXpNA4inIFHVF8C0Ei6">
-                            <div class="absolute top-3 left-3 flex flex-wrap gap-1">
-                                <span
-                                    class="font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded-full bg-secondary text-on-secondary shadow-sm">
-                                    Sulphate Free
-                                </span>
-                                <span
-                                    class="font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant shadow-sm">
-                                    Paraben Free
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
-                            <div>
-                                <h3 class="font-title-lg text-title-lg text-on-surface">Harshali Herbal Shampoo</h3>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Gentle saponin-rich
-                                    botanical cleanse for strong lustrous hair.</p>
-                            </div>
-                            <!-- Sizes & Price Table -->
-                            <div class="p-2.5 rounded-xl bg-surface-container-low space-y-1.5">
-                                <div
-                                    class="flex justify-between items-center text-on-surface font-label-md text-label-md">
-                                    <span class="text-on-surface-variant">100 ml bottle</span>
-                                    <span class="font-bold text-primary">₹250 <span
-                                            class="font-label-sm text-label-sm font-normal text-on-surface-variant">(+
-                                            Shipping)</span></span>
-                                </div>
-                                <div class="h-px bg-surface-container-highest"></div>
-                                <div
-                                    class="flex justify-between items-center text-on-surface font-label-md text-label-md">
-                                    <span class="text-on-surface-variant">180 ml bottle</span>
-                                    <span class="font-bold text-primary">₹400 <span
-                                            class="font-label-sm text-label-sm font-normal text-on-surface-variant">(+
-                                            Shipping)</span></span>
-                                </div>
-                            </div>
-                            <!-- Caution Box -->
-                            <div
-                                class="p-2.5 rounded-xl bg-tertiary-fixed/40 text-on-tertiary-container flex items-start gap-2">
-                                <span
-                                    class="material-symbols-outlined text-[18px] text-tertiary shrink-0 mt-0.5">warning</span>
-                                <p class="font-label-sm text-label-sm leading-tight font-medium">
-                                    <span class="font-bold text-tertiary">Mandatory Caution:</span> Do not apply
-                                    directly to scalp; dilute with water first.
-                                </p>
-                            </div>
-                            <!-- Key Ingredients -->
-                            <div class="space-y-1">
-                                <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Active
-                                    Botanicals:</span>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                                    Reetha, Shikakai, Amla, Rosemary, Kalonji, Jatamasi, Bhringraj, Hibiscus, Neem, Aloe
-                                    Vera.
-                                </p>
-                            </div>
-                            <!-- WhatsApp Action Button -->
-                            <a class="min-h-[44px] w-full py-2.5 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98] transition-transform"
-                                href="https://wa.me/?text=Hello%20Harshali%20Herbal%2C%20I%20would%20like%20to%20order%20Harshali%20Herbal%20Shampoo."
-                                rel="noopener noreferrer" target="_blank">
-                                <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">chat</span>
-                                <span class="">Order on WhatsApp</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Product 3: Hair Re-Growth Powder -->
-                    <div
-                        class="w-[82vw] max-w-[320px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col overflow-hidden border border-outline-variant/30">
-                        <div class="relative w-full aspect-square bg-surface-container-low">
-                            <img alt="Harshali Herbal Hair Re-Growth Powder pouch and fresh botanicals"
-                                class="w-full h-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida/AEtjO1W2-fcEDf6tZdItMrkRtQB6sk3pOrjAEIjaC2c4rYPDHgFsZBaGxI9BQe9b6StdViYiS8b3AfxHV8PXP8nARC3pYxSDrLLb2T9SBdn6Cl6rqHupm6FXA2jstrrIBbKxhigqQMo4eXTChRCNOG6O3f462cFkqOWG9H4ZXWo3WBnuq3GXWw9oJrCRdEOnGUM7v3Ci0N_R6TaKu0DzAUgSayr49brsqEpU6TCU8lmCKIOtUpec6CFyd426GGJe">
-                            <div class="absolute top-3 left-3">
-                                <span
-                                    class="font-label-sm text-label-sm font-semibold px-2.5 py-1 rounded-full bg-tertiary text-on-tertiary shadow-sm">
-                                    Intensive Care
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
-                            <div>
-                                <h3 class="font-title-lg text-title-lg text-on-surface">Hair Re-Growth Powder</h3>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Micro-milled leaf
-                                    &amp; seed ritual pack for root densification.</p>
-                            </div>
-                            <!-- Sizes & Price Table -->
-                            <div class="p-2.5 rounded-xl bg-surface-container-low space-y-1.5">
-                                <div
-                                    class="flex justify-between items-center text-on-surface font-label-md text-label-md">
-                                    <span class="text-on-surface-variant">100g pouch</span>
-                                    <span class="font-bold text-primary">₹150 <span
-                                            class="font-label-sm text-label-sm font-normal text-on-surface-variant">(+
-                                            Shipping)</span></span>
-                                </div>
-                                <div class="h-px bg-surface-container-highest"></div>
-                                <div
-                                    class="flex justify-between items-center text-on-surface font-label-md text-label-md">
-                                    <span class="text-on-surface-variant">200g pouch</span>
-                                    <span class="font-bold text-primary">₹250 <span
-                                            class="font-label-sm text-label-sm font-normal text-on-surface-variant">(+
-                                            Shipping)</span></span>
-                                </div>
-                            </div>
-                            <!-- Compulsory Alert Box -->
-                            <div
-                                class="p-2.5 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-start gap-2">
-                                <span
-                                    class="material-symbols-outlined text-[18px] text-tertiary shrink-0 mt-0.5">verified_user</span>
-                                <p class="font-label-sm text-label-sm leading-tight font-medium">
-                                    <span class="font-bold">Compulsory Step:</span> Add 2 Vitamin E capsules to mixture
-                                    before applying.
-                                </p>
-                            </div>
-                            <!-- Key Ingredients -->
-                            <div class="space-y-1">
-                                <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Active
-                                    Botanicals:</span>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
-                                    Amla, Reetha, Shikakai, Meethi, Aloe Vera, Beetroot, Hibiscus, Bhringraj, Henna,
-                                    Neem, Rosemary.
-                                </p>
-                            </div>
-                            <!-- WhatsApp Action Button -->
-                            <a class="min-h-[44px] w-full py-2.5 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98] transition-transform"
-                                href="https://wa.me/?text=Hello%20Harshali%20Herbal%2C%20I%20would%20like%20to%20order%20Harshali%20Herbal%20Hair%20Re-Growth%20Powder."
-                                rel="noopener noreferrer" target="_blank">
-                                <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">chat</span>
-                                <span class="">Order on WhatsApp</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- HOW TO USE SECTION (INTERACTIVE TAB SWITCHER) -->
-            <section class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4">
-                <div>
-                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Ritual
-                        Protocol</span>
-                    <h2 class="font-headline-sm text-headline-sm text-on-surface">How To Use For Results</h2>
-                </div>
-                <!-- 3-Button Tab Switcher -->
-                <div class="grid grid-cols-3 gap-1 p-1 rounded-full bg-surface-container">
-                    <button
-                        class="min-h-[38px] rounded-full font-label-md text-label-md transition-all text-on-primary bg-primary shadow-sm text-center"
-                        id="tab-btn-oil" onclick="switchProtocol('oil')">
-                        Hair Oil
-                    </button>
-                    <button
-                        class="min-h-[38px] rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface text-center"
-                        id="tab-btn-shampoo" onclick="switchProtocol('shampoo')">
-                        Shampoo
-                    </button>
-                    <button
-                        class="min-h-[38px] rounded-full font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface text-center"
-                        id="tab-btn-powder" onclick="switchProtocol('powder')">
-                        Hair Powder
-                    </button>
-                </div>
-                <!-- Tab 1: Hair Oil Content -->
-                <div class="protocol-content space-y-3" id="protocol-oil">
-                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low">
-                        <div
-                            class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0">
-                            <span class="material-symbols-outlined text-[18px]">water_drop</span>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="font-title-md text-title-md text-on-surface font-semibold">Daily / Alternate Day
-                                Ritual</h4>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Apply gently to scalp and hair roots. Massage with fingertips for 5-10 minutes. Apply
-                                daily or 3–4 times a week for best results. Wash with Harshali Herbal Shampoo.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-2 text-primary font-label-sm text-label-sm px-1 font-medium">
-                        <span class="material-symbols-outlined text-[16px]">schedule</span>
-                        <span class="">Recommended time: Overnight or 2 hours prior to wash</span>
-                    </div>
-                </div>
-                <!-- Tab 2: Shampoo Content -->
-                <div class="protocol-content hidden space-y-3" id="protocol-shampoo">
-                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low">
-                        <div
-                            class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0">
-                            <span class="material-symbols-outlined text-[18px]">wash</span>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="font-title-md text-title-md text-on-surface font-semibold">Gentle Cleansing
-                                Ritual</h4>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Wet hair and scalp thoroughly. Mix required quantity of shampoo with water before
-                                applying (Always dilute!). Massage gently into scalp and rinse. Use 2–3 times a week.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="p-2.5 rounded-xl bg-tertiary-fixed/30 text-on-tertiary-container flex items-center gap-2">
-                        <span class="material-symbols-outlined text-tertiary text-[18px]">info</span>
-                        <span class="font-label-sm text-label-sm font-medium">Natural foam without chemical lathering
-                            agents.</span>
-                    </div>
-                </div>
-                <!-- Tab 3: Powder Content -->
-                <div class="protocol-content hidden space-y-3" id="protocol-powder">
-                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low">
-                        <div
-                            class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0">
-                            <span class="material-symbols-outlined text-[18px]">spa</span>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="font-title-md text-title-md text-on-surface font-semibold">Weekly Deep Repair
-                                Pack</h4>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Mix required powder with water or curd in a clean bowl to form a smooth paste.
-                                <strong>COMPULSORY:</strong> Add 2 Vitamin E capsules. Apply evenly to scalp and roots.
-                                Leave for 15–20 minutes. Rinse with water and wash with Harshali Herbal Shampoo. Use
-                                once a week (preferably Sunday).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-2 text-tertiary font-label-sm text-label-sm px-1 font-semibold">
-                        <span class="material-symbols-outlined text-[16px]">calendar_today</span>
-                        <span class="">Ideal Sunday self-care ritual</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- HOLISTIC COMBO OFFERS (HORIZONTAL CAROUSEL WITH CLEAN MOBILE SNAP) -->
-            <section class="space-y-3">
-                <div class="flex items-end justify-between px-0.5">
-                    <div>
-                        <span
-                            class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Value
-                            Bundles</span>
-                        <h2 class="font-headline-sm text-headline-sm text-on-surface">Holistic Care Combos</h2>
-                    </div>
-                    <span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Save on Bundles</span>
-                </div>
-                <div class="overflow-x-auto snap-x flex gap-3.5 pb-2 no-scrollbar -mx-4 px-4">
-                    <!-- Combo 1 -->
-                    <div
-                        class="w-[76vw] max-w-[280px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-4 border border-outline-variant/30">
-                        <div class="space-y-2">
-                            <span
-                                class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">Essential
-                                Pack</span>
-                            <h3 class="font-title-lg text-title-lg text-on-surface">Hair Care Starter Combo</h3>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">
-                                100ml Herbal Hair Oil + 100ml Herbal Shampoo.
-                            </p>
-                        </div>
-                        <div class="space-y-3 pt-2">
-                            <div class="flex items-baseline gap-1">
-                                <span class="font-headline-sm text-headline-sm text-primary font-semibold">₹550</span>
-                                <span class="font-label-sm text-label-sm text-on-surface-variant">Total</span>
-                            </div>
-                            <a class="min-h-[44px] w-full py-2.5 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform"
-                                href="https://wa.me/?text=Hello%20Harshali%20Herbal%2C%20I%20would%20like%20to%20order%20the%20Hair%20Care%20Starter%20Combo%20(%E2%82%B9550)."
-                                rel="noopener noreferrer" target="_blank">
-                                <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-                                <span class="">Buy Combo</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Combo 2 -->
-                    <div
-                        class="w-[76vw] max-w-[280px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-4 border border-outline-variant/30">
-                        <div class="space-y-2">
-                            <span
-                                class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">Family
-                                Size</span>
-                            <h3 class="font-title-lg text-title-lg text-on-surface">Hair Care XL Duo</h3>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">
-                                180ml Herbal Hair Oil + 180ml Herbal Shampoo.
-                            </p>
-                        </div>
-                        <div class="space-y-3 pt-2">
-                            <div class="flex items-baseline gap-1">
-                                <span class="font-headline-sm text-headline-sm text-primary font-semibold">₹900</span>
-                                <span class="font-label-sm text-label-sm text-on-surface-variant">Total</span>
-                            </div>
-                            <a class="min-h-[44px] w-full py-2.5 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform"
-                                href="https://wa.me/?text=Hello%20Harshali%20Herbal%2C%20I%20would%20like%20to%20order%20the%20Hair%20Care%20XL%20Duo%20(%E2%82%B9900)."
-                                rel="noopener noreferrer" target="_blank">
-                                <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-                                <span class="">Buy Combo</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Combo 3 -->
-                    <div
-                        class="w-[76vw] max-w-[280px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-4 relative border border-outline-variant/30">
-                        <div class="space-y-2">
-                            <span
-                                class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-semibold">Most
-                                Popular</span>
-                            <h3 class="font-title-lg text-title-lg text-on-surface">Complete Combo</h3>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">
-                                100ml Oil + 100ml Shampoo + 100g Re-Growth Powder.
-                            </p>
-                        </div>
-                        <div class="space-y-3 pt-2">
-                            <div class="flex items-baseline gap-1">
-                                <span class="font-headline-sm text-headline-sm text-primary font-semibold">₹650</span>
-                                <span class="font-label-sm text-label-sm text-on-surface-variant">Total</span>
-                            </div>
-                            <a class="min-h-[44px] w-full py-2.5 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform"
-                                href="https://wa.me/?text=Hello%20Harshali%20Herbal%2C%20I%20would%20like%20to%20order%20the%20Hair%20Care%20Complete%20Combo%20(%E2%82%B9650)."
-                                rel="noopener noreferrer" target="_blank">
-                                <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-                                <span class="">Buy Combo</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Combo 4 -->
-                    <div
-                        class="w-[76vw] max-w-[280px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-4 relative border border-outline-variant/30">
-                        <div class="space-y-2">
-                            <span
-                                class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-semibold">Best
-                                Value</span>
-                            <h3 class="font-title-lg text-title-lg text-on-surface">Complete Value Combo</h3>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">
-                                180ml Oil + 180ml Shampoo + 200g Re-Growth Powder.
-                            </p>
-                        </div>
-                        <div class="space-y-3 pt-2">
-                            <div class="flex items-baseline gap-1">
-                                <span class="font-headline-sm text-headline-sm text-primary font-semibold">₹1,050</span>
-                                <span class="font-label-sm text-label-sm text-on-surface-variant">Total</span>
-                            </div>
-                            <a class="min-h-[44px] w-full py-2.5 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform"
-                                href="https://wa.me/?text=Hello%20Harshali%20Herbal%2C%20I%20would%20like%20to%20order%20the%20Hair%20Care%20Complete%20Value%20Combo%20(%E2%82%B91050)."
-                                rel="noopener noreferrer" target="_blank">
-                                <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-                                <span class="">Buy Combo</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- HOW TO ORDER (2-COLUMN STEPPER WITH CLEAN BADGES) -->
-            <section class="space-y-3">
-                <div>
-                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Simple
-                        Ordering</span>
-                    <h2 class="font-headline-sm text-headline-sm text-on-surface">How To Order On WhatsApp</h2>
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Step 1 -->
-                    <div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-1.5">
-                        <span
-                            class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
-                        <span class="font-title-md text-title-md text-on-surface font-semibold">Choose Product</span>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Pick formulations
-                            &amp; preferred bottle size.</p>
-                    </div>
-                    <!-- Step 2 -->
-                    <div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-1.5">
-                        <span
-                            class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
-                        <span class="font-title-md text-title-md text-on-surface font-semibold">Tap Order</span>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Tap WhatsApp CTA to
-                            open direct chat.</p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-1.5">
-                        <span
-                            class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
-                        <span class="font-title-md text-title-md text-on-surface font-semibold">Share Address</span>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Send Name, Address,
-                            &amp; Phone number.</p>
-                    </div>
-                    <!-- Step 4 -->
-                    <div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-1.5">
-                        <span
-                            class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm flex items-center justify-center font-bold">4</span>
-                        <span class="font-title-md text-title-md text-on-surface font-semibold">UPI Payment</span>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Confirm details &amp;
-                            complete instant UPI.</p>
-                    </div>
-                    <!-- Step 5 (Full width) -->
-                    <div
-                        class="col-span-2 p-3.5 rounded-xl bg-secondary-container text-on-secondary-container flex items-center gap-3">
-                        <span
-                            class="w-7 h-7 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold shrink-0">5</span>
-                        <div>
-                            <span class="font-title-md text-title-md font-semibold block leading-tight">Order
-                                Dispatched</span>
-                            <p class="font-body-sm text-body-sm leading-tight opacity-90 mt-0.5">Fresh small batch
-                                safely packed &amp; tracking shared via WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- REVIEWS & BRAND STORY -->
-            <section class="space-y-4">
-                <div class="flex items-end justify-between px-0.5">
-                    <div>
-                        <span
-                            class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Community
-                            Love</span>
-                        <h2 class="font-headline-sm text-headline-sm text-on-surface">Customer Experiences</h2>
-                    </div>
-                    <div class="flex items-center gap-1 text-tertiary-container">
-                        <span class="material-symbols-outlined text-[18px]"
-                            style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="font-label-md text-label-md text-on-surface font-semibold">4.9/5</span>
-                    </div>
-                </div>
-                <!-- Review Horizontal Carousel with clean bleed -->
-                <div class="overflow-x-auto snap-x flex gap-3 pb-2 no-scrollbar -mx-4 px-4">
-                    <!-- Review 1 -->
-                    <div
-                        class="w-[78vw] max-w-[290px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-3 border border-outline-variant/30">
-                        <div class="space-y-2">
-                            <div class="flex text-tertiary-container">
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="font-body-sm text-body-sm text-on-surface leading-relaxed italic">
-                                "The hair oil has authentic natural herbal aroma. After 4 weeks my hair fall noticeably
-                                stopped!"
-                            </p>
-                        </div>
-                        <div class="flex items-center justify-between pt-1">
-                            <span class="font-label-md text-label-md font-semibold text-primary">Sunita Patel</span>
-                            <span class="font-label-sm text-label-sm text-on-surface-variant">Hyderabad</span>
-                        </div>
-                    </div>
-                    <!-- Review 2 -->
-                    <div
-                        class="w-[78vw] max-w-[290px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-3 border border-outline-variant/30">
-                        <div class="space-y-2">
-                            <div class="flex text-tertiary-container">
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="font-body-sm text-body-sm text-on-surface leading-relaxed italic">
-                                "The Sunday ritual with Re-Growth powder + Vitamin E capsules is a game changer. Scalp
-                                feels refreshed!"
-                            </p>
-                        </div>
-                        <div class="flex items-center justify-between pt-1">
-                            <span class="font-label-md text-label-md font-semibold text-primary">Rohit Kulkarni</span>
-                            <span class="font-label-sm text-label-sm text-on-surface-variant">Pune</span>
-                        </div>
-                    </div>
-                    <!-- Review 3 -->
-                    <div
-                        class="w-[78vw] max-w-[290px] flex-shrink-0 snap-center bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-3 border border-outline-variant/30">
-                        <div class="space-y-2">
-                            <div class="flex text-tertiary-container">
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-[16px]"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="font-body-sm text-body-sm text-on-surface leading-relaxed italic">
-                                "Ordered the Complete Combo on WhatsApp. Dispatch was fast and authentic natural
-                                ingredients at great prices."
-                            </p>
-                        </div>
-                        <div class="flex items-center justify-between pt-1">
-                            <span class="font-label-md text-label-md font-semibold text-primary">Ananya Nair</span>
-                            <span class="font-label-sm text-label-sm text-on-surface-variant">Bengaluru</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- About Us / Brand Promise Unified Card -->
-                <div class="p-4 rounded-2xl bg-surface-container-low flex flex-col space-y-2">
-                    <div class="flex items-center gap-1.5 text-primary">
-                        <span class="material-symbols-outlined text-[18px]">verified</span>
-                        <span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">The Harshali
-                            Promise</span>
-                    </div>
-                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Herbal Roots. Health Results.</h3>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                        Founded in Western Ghats Ayurvedic wisdom. Harshali Herbal crafts pure handmade formulations
-                        with zero sulphates, parabens, or synthetic additives. Small batches, high potency, transparent
-                        pricing.
-                    </p>
-                </div>
-            </section>
-
-            <!-- FOOTER -->
-            <footer class="pt-2 pb-6 space-y-4 text-center">
-                <div
-                    class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm text-left space-y-3 border border-outline-variant/30">
-                    <div class="pb-1"><img alt="Harshali Herbal" class="h-12 w-auto object-contain"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5-Zd7uxZ-rSJvRDOWVQ5mxRdsfLiQ8xFrJOvwGHnYFQCFygBLEtoO7O0o48DwhElapXUb-_jnopjyDZRV300zeo713asHDZJfpFTZR45-b8-6-vNjBiB0_OEUCvMUwVyRGU3U60b4Trqc2CP7aS7LTerK1N8VfVQJtSXXXy2j-3NF4zF-gqR2aLTsAnb1OV6GNVHETTbISACLVtmzhRqKcO7ERvnzG3p5tf3YrKVUUr6PP_5UfSCBXnPUXgClL2lZnVI">
-                    </div>
-                    <div>
-                        <h4 class="font-title-md text-title-md text-primary font-bold">Harshali Enterprises</h4>
-                        <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Makers of Authentic
-                            Ayurvedic Formulations</p>
-                    </div>
-                    <div class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
-                        <div class="flex items-start gap-2">
-                            <span
-                                class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">location_on</span>
-                            <span class="">Shival Nagar, Hyderabad, Telangana - 500006</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[16px] text-primary shrink-0">mail</span>
-                            <span class="truncate">harshalienterprises222@gmail.com</span>
-                        </div>
-                    </div>
-                    <div
-                        class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm border-t border-surface-container-highest">
-                        <span class="">© 2026 Harshali Herbal</span>
-                        <span class="">All Rights Reserved</span>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <!-- Tab Switcher Micro-interaction Script -->
-        <script>
-            function switchProtocol(tab) {
-                const tabs = ['oil', 'shampoo', 'powder'];
-                tabs.forEach(t => {
-                    const content = document.getElementById('protocol-' + t);
-                    const btn = document.getElementById('tab-btn-' + t);
-                    if (t === tab) {
-                        content.classList.remove('hidden');
-                        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
-                        btn.classList.remove('text-on-surface-variant');
-                    } else {
-                        content.classList.add('hidden');
-                        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
-                        btn.classList.add('text-on-surface-variant');
-                    }
-                });
-            }
-        </script>
-    </main>
-    <div class="fixed bottom-20 inset-x-0 z-40 px-4 pointer-events-none">
-        <div class="pointer-events-auto max-w-md mx-auto"><a
-                class="w-full min-h-[44px] py-2.5 px-4 bg-primary text-on-primary rounded-full shadow-[0_12px_32px_-4px_rgba(30,58,26,0.18)] flex items-center justify-center gap-2 hover:bg-primary-container transition-all active:scale-[0.99]"
-                href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span
-                    class="material-symbols-outlined text-[20px] text-tertiary-fixed">shopping_bag</span><span
-                    class="font-label-md text-label-md font-semibold">Instant WhatsApp Order</span><span
-                    class="material-symbols-outlined text-[16px]">arrow_forward</span></a></div>
+  <!-- Mobile Viewport Container (Max 420px) -->
+  <main class="w-full max-w-[420px] bg-surface min-h-screen shadow-2xl relative flex flex-col overflow-x-hidden border-x border-outline-variant/40">
+    
+    <!-- 01. INFINITE MOVING TOP MARQUEE STRIP -->
+    <div class="bg-primary text-on-primary py-2 overflow-hidden whitespace-nowrap z-50 border-b border-primary-container/40">
+      <div class="inline-flex animate-marquee gap-4 font-bold text-[10px] sm:text-[11px] uppercase tracking-wider">
+        <span>HAR GHAR HARSHALI • 100% NATURAL • HANDMADE • PURE HERBAL</span>
+        <span class="text-secondary-container">•</span>
+        <span>HAR GHAR HARSHALI • 100% NATURAL • HANDMADE • PURE HERBAL</span>
+        <span class="text-secondary-container">•</span>
+        <span>HAR GHAR HARSHALI • 100% NATURAL • HANDMADE • PURE HERBAL</span>
+        <span class="text-secondary-container">•</span>
+        <span>HAR GHAR HARSHALI • 100% NATURAL • HANDMADE • PURE HERBAL</span>
+        <span class="text-secondary-container">•</span>
+      </div>
     </div>
-    <nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(30,58,26,0.06)]"
-        data-active-classes="text-primary font-bold">
-        <div class="flex items-center justify-around h-16 max-w-lg mx-auto px-space-xs"><a aria-current="page"
-                class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 transition-colors text-primary font-bold"
-                data-path="ayurvedic-home" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span
-                    class="font-label-sm text-label-sm mt-0.5">Home</span></a><a
-                class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant transition-colors"
-                data-path="herbal-remedies" href="#"><span
-                    class="material-symbols-outlined text-[22px]">local_florist</span><span
-                    class="font-label-sm text-label-sm mt-0.5">Remedies</span></a><a
-                class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant transition-colors"
-                data-path="dosha-consultation" href="#"><span
-                    class="material-symbols-outlined text-[22px]">psychology_alt</span><span
-                    class="font-label-sm text-label-sm mt-0.5">Consult</span></a><a
-                class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant transition-colors"
-                data-path="ayurvedic-cart" href="#"><span
-                    class="material-symbols-outlined text-[22px]">shopping_basket</span><span
-                    class="font-label-sm text-label-sm mt-0.5">Cart</span></a><a
-                class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant transition-colors"
-                data-path="account-wellness" href="#"><span
-                    class="material-symbols-outlined text-[22px]">account_circle</span><span
-                    class="font-label-sm text-label-sm mt-0.5">Account</span></a></div>
-    </nav>
 
+    <!-- 02. STICKY GLASSMORPHIC HEADER -->
+    <header class="sticky top-0 z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/60 px-4 py-3 shadow-2xs">
+      <div class="flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-primary shadow-2xs border border-primary/10 shrink-0">
+            <svg class="h-5 w-5 text-primary" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M45 12C28 12 14 26 14 43C14 60 28 74 45 74C56 74 66 68 71 59C61 65 48 65 39 58C30 51 27 38 33 28C38 19 48 14 59 15C54 13 49.5 12 45 12Z" fill="#1E3A1A"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-headline-md text-base leading-tight text-primary font-bold tracking-tight">Harshali Herbal</span>
+            <span class="text-[9px] text-secondary font-semibold uppercase tracking-widest leading-none mt-0.5">Herbal Roots, Health Results</span>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-2">
+          <button onclick="showCartDrawer()" class="relative p-2 rounded-full bg-surface-container text-primary hover:bg-surface-container-high active:scale-95 transition-all">
+            <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+            <span id="header-cart-badge" class="absolute -top-1 -right-1 bg-whatsapp text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-2xs">1</span>
+          </button>
+          <a class="h-8 px-3 rounded-full bg-whatsapp hover:bg-whatsapp-hover text-white text-xs font-bold flex items-center gap-1 shadow-2xs transition-all active:scale-95"
+             href="https://wa.me/917671080575?text=Hello%20Harshali%20Herbal,%20I%20want%20to%20order"
+             target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[15px]">chat</span>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 03. HERO SECTION -->
+    <section class="p-4 pt-5 space-y-4">
+      <div class="space-y-2">
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/70 text-primary font-bold uppercase tracking-wider text-[10px] border border-primary/10">
+          <span class="material-symbols-outlined text-[14px]">spa</span>
+          HERBAL PERSONAL CARE • SMALL BATCH
+        </span>
+        
+        <h1 class="font-headline-md text-3xl sm:text-4xl text-primary leading-tight tracking-tight font-bold pt-1">
+          Herbal Roots, <span class="italic font-normal text-secondary">Health Results.</span>
+        </h1>
+        
+        <p class="text-on-surface-variant text-xs sm:text-sm leading-relaxed">
+          Natural care inspired by traditional herbal ingredients, thoughtfully prepared for everyday hair and personal care.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-2.5 pt-1">
+        <button onclick="showCartDrawer()" class="h-12 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-sm font-bold flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98]">
+          <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+          <span>Order / Checkout Cart</span>
+        </button>
+        
+        <a class="h-11 w-full rounded-xl border border-primary/30 bg-surface-container-low text-primary text-xs font-bold flex items-center justify-center gap-1.5 hover:bg-surface-container transition-all active:scale-[0.99]"
+           href="#products">
+          <span>Shop Products</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="rounded-2xl bg-surface-container-low p-3 border border-outline-variant/60 shadow-2xs overflow-hidden">
+        <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container">
+          <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+               src="assets/images/products/hero-hair-oil.webp" 
+               alt="Harshali Herbal Hair Oil Bottle"
+               loading="eager"
+               decoding="async"
+               onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBOvwEwoFzw3A9AP9RG4f7U55IgGsymiBsQ1ilavN2HqPTVC6g1UJhpzK8QYLI3zVRQXT1hWrfEuKQQJFbPNkXG00Qh9kimEXF8Vi7TLplnlWXYardxQ9SO62DyKyL8e5KuqMa-OhRWJmVl32X6375w59gpGa_rlFVuijlpeCFrxln7gO0qSoMO_kjiRguAd45H2oA2AhePvis2dj93UYUWl-fOLmy3eQqUPqFL-zkxvSmGi_vK70phUQ';" />
+          <div class="absolute bottom-2.5 left-2.5 right-2.5 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-outline-variant/50 text-center shadow-2xs">
+            <p class="text-primary font-bold text-[10px] sm:text-[11px] leading-tight">Handmade Pure Herbal Range • Fresh Small Batches</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-2 pt-1">
+        <div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-2xs">
+          <div class="p-2 rounded-lg bg-secondary-container/60 text-primary shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[18px]">verified_user</span>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-primary">Transparent Ingredients</h4>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">100% disclosed botanicals, zero parabens or hidden sulphates.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-2xs">
+          <div class="p-2 rounded-lg bg-secondary-container/60 text-primary shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[18px]">menu_book</span>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-primary">Clear Step-by-Step Usage</h4>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Tested ritual protocols & dosage guidelines for maximum efficacy.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-2xs">
+          <div class="p-2 rounded-lg bg-secondary-container/60 text-primary shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[18px]">forum</span>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-primary">Direct WhatsApp Support</h4>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Instant order placement & personalized formulation guidance directly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. WHY HARSHALI HERBAL (TRUST GRID) -->
+    <section class="p-4 bg-surface-container-low border-y border-outline-variant/50 space-y-4 my-2">
+      <div>
+        <span class="font-bold text-secondary uppercase tracking-widest text-[10px]">WHY HARSHALI HERBAL</span>
+        <h2 class="font-headline-md text-primary text-xl sm:text-2xl mt-0.5 font-bold">Built Around Clear Information & Everyday Care</h2>
+        <p class="text-on-surface-variant text-xs sm:text-sm mt-1 leading-relaxed">
+          We provide complete transparency on what goes into our products and how to use them.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2.5">
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 flex flex-col justify-between h-36 shadow-2xs">
+          <div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-primary shrink-0">
+            <span class="material-symbols-outlined text-[18px]">eco</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-primary leading-tight">Clear Ingredients</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-1">Full component transparency with zero chemicals.</p>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 flex flex-col justify-between h-36 shadow-2xs">
+          <div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-primary shrink-0">
+            <span class="material-symbols-outlined text-[18px]">science</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-primary leading-tight">Thoughtfully Prepared</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-1">Handcrafted in small, strictly controlled batches.</p>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 flex flex-col justify-between h-36 shadow-2xs">
+          <div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-primary shrink-0">
+            <span class="material-symbols-outlined text-[18px]">task_alt</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-primary leading-tight">Simple Usage</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-1">Step-by-step everyday ritual instructions.</p>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 flex flex-col justify-between h-36 shadow-2xs">
+          <div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-primary shrink-0">
+            <span class="material-symbols-outlined text-[18px]">support_agent</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-primary leading-tight">Direct Support</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-1">Consult directly with our team on WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-xl bg-primary text-on-primary py-2.5 px-3 text-center shadow-2xs">
+        <p class="text-[10px] sm:text-[11px] font-bold tracking-wide">
+          🌿 AYUSH Certified • Cruelty Free & Clean • Pan-India Express Dispatch
+        </p>
+      </div>
+    </section>
+
+    <!-- 05. CORE REMEDIES (SNAP-SCROLL PRODUCT CAROUSEL) -->
+    <section class="p-4 space-y-4" id="products">
+      <div class="flex flex-col gap-2">
+        <div>
+          <span class="font-bold text-secondary uppercase tracking-widest text-[10px]">CORE REMEDIES</span>
+          <h2 class="font-headline-md text-primary text-xl sm:text-2xl font-bold mt-0.5">Herbal Care for Everyday Routines</h2>
+        </div>
+
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+          <button id="filter-all" onclick="filterProducts('all')" class="filter-pill px-4 py-1.5 rounded-full bg-primary text-white text-xs font-bold whitespace-nowrap transition-all shadow-2xs">All</button>
+          <button id="filter-hair" onclick="filterProducts('hair')" class="filter-pill px-4 py-1.5 rounded-full bg-surface-container border border-outline-variant/60 text-on-surface-variant text-xs font-bold whitespace-nowrap hover:border-primary transition-all">Hair Care</button>
+          <button id="filter-personal" onclick="filterProducts('personal')" class="filter-pill px-4 py-1.5 rounded-full bg-surface-container border border-outline-variant/60 text-on-surface-variant text-xs font-bold whitespace-nowrap hover:border-primary transition-all">Personal Care</button>
+        </div>
+      </div>
+
+      <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3 pt-1 no-scrollbar -mx-4 px-4 scroll-smooth">
+        <div class="product-card prod-hair w-[82%] sm:w-[280px] shrink-0 snap-start rounded-2xl bg-surface-container-lowest border border-outline-variant/60 shadow-2xs overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="relative w-full aspect-square bg-surface-container overflow-hidden">
+              <img class="w-full h-full object-cover" src="assets/images/products/hair-oil.webp" alt="Harshali Herbal Hair Oil" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBOvwEwoFzw3A9AP9RG4f7U55IgGsymiBsQ1ilavN2HqPTVC6g1UJhpzK8QYLI3zVRQXT1hWrfEuKQQJFbPNkXG00Qh9kimEXF8Vi7TLplnlWXYardxQ9SO62DyKyL8e5KuqMa-OhRWJmVl32X6375w59gpGa_rlFVuijlpeCFrxln7gO0qSoMO_kjiRguAd45H2oA2AhePvis2dj93UYUWl-fOLmy3eQqUPqFL-zkxvSmGi_vK70phUQ';" />
+              <span class="absolute top-2.5 left-2.5 bg-primary text-white font-bold px-2 py-0.5 rounded-md text-[9px] uppercase tracking-wider shadow-2xs">Bestseller</span>
+            </div>
+            <div class="p-3.5 space-y-2">
+              <div class="flex justify-between items-start gap-1">
+                <div>
+                  <h3 class="font-bold text-primary text-sm sm:text-base leading-snug">Harshali Herbal Hair Oil</h3>
+                  <p class="text-[11px] text-secondary font-medium mt-0.5">11 Active Botanicals • Cold Infused</p>
+                </div>
+                <span class="font-bold text-primary text-sm shrink-0">From ₹399</span>
+              </div>
+              <div class="flex items-center gap-1.5 pt-1">
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[10px] font-bold border border-outline-variant/40">100ml</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[10px] font-bold border border-outline-variant/40">180ml</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[10px] font-bold border border-outline-variant/40">200ml</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-3.5 pt-0">
+            <button onclick="showCartDrawer()" class="h-10 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-2xs transition-all active:scale-[0.98]">
+              <span class="material-symbols-outlined text-[15px]">add_shopping_cart</span>
+              <span>Add Hair Oil to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card prod-hair w-[82%] sm:w-[280px] shrink-0 snap-start rounded-2xl bg-surface-container-lowest border border-outline-variant/60 shadow-2xs overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="relative w-full aspect-square bg-surface-container overflow-hidden">
+              <img class="w-full h-full object-cover" src="assets/images/products/shampoo.webp" alt="Harshali Herbal Shampoo" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuC0xnq_jgG5PLIaeB-u0cu6XeyOmsN2bYEqp9-JPJd7uGHn3qxITbaBnsvy0ybci0t2cK2kxRaxs5TXxX6Ywn-wO6I9dp-9js7xlPWqg7BOZEwRfQpahkcrRCgM-eG2gCALu_tqOq9lDicSlo_RtVkfAypiWh4S_I5KMCPP9gQIrldbMAL9JtqxNYU8SSvR89UYgKPHdrNxGM_XtAUeH-4ya5xTH95HJlNMxghmTobhN2g2DeQGuD1lvQ';" />
+              <span class="absolute top-2.5 left-2.5 bg-secondary text-white font-bold px-2 py-0.5 rounded-md text-[9px] uppercase tracking-wider shadow-2xs">Gentle Cleanse</span>
+            </div>
+            <div class="p-3.5 space-y-2">
+              <div class="flex justify-between items-start gap-1">
+                <div>
+                  <h3 class="font-bold text-primary text-sm sm:text-base leading-snug">Harshali Herbal Shampoo</h3>
+                  <p class="text-[11px] text-secondary font-medium mt-0.5">Sulphate & Paraben Free • Reetha</p>
+                </div>
+                <span class="font-bold text-primary text-sm shrink-0">From ₹299</span>
+              </div>
+              <div class="flex items-center gap-1.5 pt-1">
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[10px] font-bold border border-outline-variant/40">100ml</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[10px] font-bold border border-outline-variant/40">180ml</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[10px] font-bold border border-outline-variant/40">200ml</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-3.5 pt-0">
+            <button onclick="showCartDrawer()" class="h-10 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-2xs transition-all active:scale-[0.98]">
+              <span class="material-symbols-outlined text-[15px]">add_shopping_cart</span>
+              <span>Add Shampoo to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card prod-hair w-[82%] sm:w-[280px] shrink-0 snap-start rounded-2xl bg-surface-container-lowest border border-outline-variant/60 shadow-2xs overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="relative w-full aspect-square bg-surface-container overflow-hidden">
+              <img class="w-full h-full object-cover" src="assets/images/products/powder.webp" alt="Hair Re-Growth Powder" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBsWS8eAyOgqdk0MB6LVWGoCXDsHqbpTUmASQ2Yki3_f6QtEAjWf-2jbDNLoCEZMR4VqMA4fFkcVDe_A5xn_25ZvMB93LyuRYPh5sHGKeQH6JuvK5j7wCupjkUSom438e_HQCnexULZ870eTQTxkvmqGo8zRvkgiaEirEiwKrhodohq15mikVQg5gPduzgYv1bouBmEjTqIAyIJfesXv3A33Id7E1PepIjhz-IrI1wNfanMo3P7gg_zqw';" />
+              <span class="absolute top-2.5 left-2.5 bg-primary-container text-white font-bold px-2 py-0.5 rounded-md text-[9px] uppercase tracking-wider shadow-2xs">Intensive Care</span>
+            </div>
+            <div class="p-3.5 space-y-2">
+              <div class="flex justify-between items-start gap-1">
+                <div>
+                  <h3 class="font-bold text-primary text-sm sm:text-base leading-snug">Hair Re-Growth Powder</h3>
+                  <p class="text-[11px] text-secondary font-medium mt-0.5">Potent Root Mask • Weekly Ritual</p>
+                </div>
+                <span class="font-bold text-primary text-sm shrink-0">From ₹199</span>
+              </div>
+              <div class="flex items-center gap-1.5 pt-1">
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[10px] font-bold border border-outline-variant/40">100g</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant text-[10px] font-bold border border-outline-variant/40">200g</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-3.5 pt-0">
+            <button onclick="showCartDrawer()" class="h-10 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-2xs transition-all active:scale-[0.98]">
+              <span class="material-symbols-outlined text-[15px]">add_shopping_cart</span>
+              <span>Add Powder to Cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-2">
+        <span class="font-bold uppercase text-on-surface-variant tracking-wider text-[10px] block mb-2">Coming Soon In Small Batch</span>
+        <div class="grid grid-cols-2 gap-2.5">
+          <div class="p-3 rounded-xl bg-surface-container-low border border-dashed border-outline-variant flex flex-col justify-center items-center text-center opacity-80">
+            <span class="material-symbols-outlined text-secondary text-[22px]">soap</span>
+            <span class="font-bold text-xs text-primary mt-1">Herbal Soap</span>
+            <span class="text-[10px] text-outline">100g Cold Process</span>
+          </div>
+
+          <div class="p-3 rounded-xl bg-surface-container-low border border-dashed border-outline-variant flex flex-col justify-center items-center text-center opacity-80">
+            <span class="material-symbols-outlined text-secondary text-[22px]">clean_hands</span>
+            <span class="font-bold text-xs text-primary mt-1">Herbal Facewash</span>
+            <span class="text-[10px] text-outline">100ml Neem Aloe</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. RITUAL PROTOCOL -->
+    <section class="p-4 bg-surface-container-low border-y border-outline-variant/60 space-y-3.5 my-2" id="routine">
+      <div>
+        <span class="font-bold text-secondary uppercase tracking-widest text-[10px]">RITUAL PROTOCOL</span>
+        <h2 class="font-headline-md text-primary text-xl sm:text-2xl font-bold mt-0.5">The Harshali Ritual</h2>
+        <p class="text-on-surface-variant text-xs sm:text-sm mt-0.5 leading-relaxed">
+          Tested Ayurvedic protocols for best hair nourishment results.
+        </p>
+      </div>
+
+      <div class="flex p-1 bg-surface-container rounded-xl gap-1 border border-outline-variant/40">
+        <button id="tab-oil-btn" onclick="switchRitual('oil')" class="flex-1 py-1.5 text-xs font-bold rounded-lg bg-surface text-primary shadow-2xs transition-all">
+          Hair Oil
+        </button>
+        <button id="tab-shampoo-btn" onclick="switchRitual('shampoo')" class="flex-1 py-1.5 text-xs font-bold rounded-lg text-on-surface-variant hover:text-primary transition-all">
+          Shampoo
+        </button>
+        <button id="tab-powder-btn" onclick="switchRitual('powder')" class="flex-1 py-1.5 text-xs font-bold rounded-lg text-on-surface-variant hover:text-primary transition-all">
+          Hair Powder
+        </button>
+      </div>
+
+      <div id="ritual-oil" class="space-y-2.5">
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">01</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Apply Gently to Scalp & Roots</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Part hair into sections and distribute oil directly across scalp using fingertips.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">02</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Warm Micro-Massage</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Massage softly in circular motions for 5–10 minutes to activate scalp circulation.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">03</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Deep Absorption & Frequency</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Leave overnight or at least 2 hours prior to washing. Recommended 3–4 times weekly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ritual-shampoo" class="hidden space-y-2.5">
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">01</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Thoroughly Wet Scalp & Hair</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Drench scalp and hair strands with room temperature or lukewarm water.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-secondary-container/40 rounded-xl border border-secondary-container shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">02</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">MANDATORY: Dilute with Water First</h3>
+            <p class="text-[11px] text-on-surface font-bold leading-snug mt-0.5">Mix required shampoo quantity with water in a bowl first. Always dilute before applying directly.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">03</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Gentle Scalp Cleansing</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Massage diluted lather gently into scalp and rinse thoroughly. Use 2–3 times weekly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ritual-powder" class="hidden space-y-2.5">
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">01</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Mix into Smooth Paste</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Mix powder with water or fresh curd in a clean bowl to form a smooth paste.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-secondary-container/40 rounded-xl border border-secondary-container shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">02</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">COMPULSORY: Add 2 Vitamin E Capsules</h3>
+            <p class="text-[11px] text-on-surface font-bold leading-snug mt-0.5">Puncture and blend 2 Vitamin E capsules into the paste before applying to hair roots.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">03</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Apply & Rinse in 15–20 Mins</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Apply evenly onto scalp and roots, leave for 15–20 mins, then rinse & wash. Use once weekly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. VALUE BUNDLES (COMBOS CAROUSEL) -->
+    <section class="p-4 space-y-4" id="combos">
+      <div>
+        <span class="font-bold text-secondary uppercase tracking-widest text-[10px]">VALUE BUNDLES</span>
+        <h2 class="font-headline-md text-primary text-xl sm:text-2xl font-bold mt-0.5">Hair Care Combos</h2>
+        <p class="text-on-surface-variant text-xs sm:text-sm mt-0.5 leading-relaxed">
+          Curated formulations packaged together for your daily hair-care routine.
+        </p>
+      </div>
+
+      <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3 pt-1 no-scrollbar -mx-4 px-4 scroll-smooth">
+        <div class="w-[88%] sm:w-[320px] shrink-0 snap-start rounded-2xl bg-surface-container-lowest border border-outline-variant/70 shadow-2xs p-4 flex flex-col justify-between space-y-3">
+          <div class="space-y-3">
+            <div class="relative w-full aspect-[4/3] rounded-xl bg-surface-container overflow-hidden">
+              <img class="w-full h-full object-cover" src="assets/images/combos/hair-care-duo.webp" alt="Harshali Hair Care Duo" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBOvwEwoFzw3A9AP9RG4f7U55IgGsymiBsQ1ilavN2HqPTVC6g1UJhpzK8QYLI3zVRQXT1hWrfEuKQQJFbPNkXG00Qh9kimEXF8Vi7TLplnlWXYardxQ9SO62DyKyL8e5KuqMa-OhRWJmVl32X6375w59gpGa_rlFVuijlpeCFrxln7gO0qSoMO_kjiRguAd45H2oA2AhePvis2dj93UYUWl-fOLmy3eQqUPqFL-zkxvSmGi_vK70phUQ';" />
+              <span class="absolute top-2.5 left-2.5 bg-secondary-container text-primary text-[9px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider">Essential Routine</span>
+            </div>
+
+            <div class="flex justify-between items-start gap-1">
+              <div>
+                <h3 class="font-bold text-primary text-base">Hair Care Duo</h3>
+                <p class="text-[11px] text-on-surface-variant mt-0.5">Hair Oil + Gentle Herbal Shampoo</p>
+              </div>
+              <div class="text-right shrink-0">
+                <span id="combo1-price" class="font-bold text-primary text-lg sm:text-xl">₹599</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant block mb-1.5">Select Bottle Size:</span>
+              <div class="grid grid-cols-3 gap-1.5">
+                <button onclick="updateCombo1('100ml', '599', this)" class="combo1-btn py-1.5 text-xs font-bold rounded-lg border border-primary bg-primary text-white transition-all">100 ml</button>
+                <button onclick="updateCombo1('180ml', '999', this)" class="combo1-btn py-1.5 text-xs font-bold rounded-lg border border-outline-variant/60 text-on-surface-variant hover:border-primary transition-all">180 ml</button>
+                <button onclick="updateCombo1('200ml', '1099', this)" class="combo1-btn py-1.5 text-xs font-bold rounded-lg border border-outline-variant/60 text-on-surface-variant hover:border-primary transition-all">200 ml</button>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="showCartDrawer()" class="h-10 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-2xs transition-all active:scale-[0.98]">
+            <span class="material-symbols-outlined text-[15px]">add_shopping_cart</span>
+            <span>Add Duo to Cart</span>
+          </button>
+        </div>
+
+        <div class="w-[88%] sm:w-[320px] shrink-0 snap-start rounded-2xl bg-surface-container-lowest border-2 border-primary/80 shadow-2xs p-4 flex flex-col justify-between space-y-3">
+          <div class="space-y-3">
+            <div class="relative w-full aspect-[4/3] rounded-xl bg-surface-container overflow-hidden">
+              <img class="w-full h-full object-cover" src="assets/images/combos/complete-routine.webp" alt="Complete Hair Care Routine" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBsWS8eAyOgqdk0MB6LVWGoCXDsHqbpTUmASQ2Yki3_f6QtEAjWf-2jbDNLoCEZMR4VqMA4fFkcVDe_A5xn_25ZvMB93LyuRYPh5sHGKeQH6JuvK5j7wCupjkUSom438e_HQCnexULZ870eTQTxkvmqGo8zRvkgiaEirEiwKrhodohq15mikVQg5gPduzgYv1bouBmEjTqIAyIJfesXv3A33Id7E1PepIjhz-IrI1wNfanMo3P7gg_zqw';" />
+              <span class="absolute top-2.5 left-2.5 bg-primary text-white text-[9px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider">Most Popular</span>
+            </div>
+
+            <div class="flex justify-between items-start gap-1">
+              <div>
+                <h3 class="font-bold text-primary text-base">Complete Routine</h3>
+                <p class="text-[11px] text-on-surface-variant mt-0.5">Oil + Shampoo + Re-Growth Powder</p>
+              </div>
+              <div class="text-right shrink-0">
+                <span id="combo2-price" class="font-bold text-primary text-lg sm:text-xl">₹749</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant block mb-1.5">Select Bundle Size:</span>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="updateCombo2('100ml', '749', this)" class="combo2-btn py-1.5 text-xs font-bold rounded-lg border border-primary bg-primary text-white transition-all">100ml Set</button>
+                <button onclick="updateCombo2('XL', '1249', this)" class="combo2-btn py-1.5 text-xs font-bold rounded-lg border border-outline-variant/60 text-on-surface-variant hover:border-primary transition-all">XL Set</button>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="showCartDrawer()" class="h-10 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-2xs transition-all active:scale-[0.98]">
+            <span class="material-symbols-outlined text-[15px]">add_shopping_cart</span>
+            <span>Add Routine to Cart</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. FORMULATION TRANSPARENCY -->
+    <section class="p-4 bg-surface-container-low border-y border-outline-variant/60 space-y-3.5 my-2" id="ingredients">
+      <div>
+        <span class="font-bold text-secondary uppercase tracking-widest text-[10px]">FORMULATION TRANSPARENCY</span>
+        <h2 class="font-headline-md text-primary text-xl sm:text-2xl font-bold mt-0.5">The Herbal Blend</h2>
+        <p class="text-on-surface-variant text-xs sm:text-sm mt-0.5 leading-relaxed">
+          Hand-picked medicinal botanicals with zero hidden fillers.
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <div class="p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 flex items-center justify-between shadow-2xs">
+          <div>
+            <h3 class="text-xs font-bold text-primary">Amla</h3>
+            <p class="text-[10px] italic text-secondary font-medium">Phyllanthus emblica</p>
+          </div>
+          <span class="text-[10px] font-bold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded border border-outline-variant/30">Rich Vitamin C Shield</span>
+        </div>
+
+        <div class="p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 flex items-center justify-between shadow-2xs">
+          <div>
+            <h3 class="text-xs font-bold text-primary">Bhringraj</h3>
+            <p class="text-[10px] italic text-secondary font-medium">Eclipta alba</p>
+          </div>
+          <span class="text-[10px] font-bold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded border border-outline-variant/30">Follicle Nourisher</span>
+        </div>
+
+        <div class="p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 flex items-center justify-between shadow-2xs">
+          <div>
+            <h3 class="text-xs font-bold text-primary">Rosemary & Jatamasi</h3>
+            <p class="text-[10px] italic text-secondary font-medium">Rosmarinus & Nardostachys</p>
+          </div>
+          <span class="text-[10px] font-bold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded border border-outline-variant/30">Density & Calming</span>
+        </div>
+
+        <div class="p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 flex items-center justify-between shadow-2xs">
+          <div>
+            <h3 class="text-xs font-bold text-primary">Brahmi & Vetiver</h3>
+            <p class="text-[10px] italic text-secondary font-medium">Bacopa & Chrysopogon</p>
+          </div>
+          <span class="text-[10px] font-bold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded border border-outline-variant/30">Cooling Scalp Base</span>
+        </div>
+
+        <div class="p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 flex items-center justify-between shadow-2xs">
+          <div>
+            <h3 class="text-xs font-bold text-primary">Neem & Fresh Curry Leaves</h3>
+            <p class="text-[10px] italic text-secondary font-medium">Azadirachta & Murraya koenigii</p>
+          </div>
+          <span class="text-[10px] font-bold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded border border-outline-variant/30">Flake Protection</span>
+        </div>
+      </div>
+
+      <button onclick="toggleModal('pharmacopeia-modal')" class="w-full py-2.5 rounded-xl border border-primary/30 text-primary text-xs font-bold bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5 shadow-2xs">
+        <span class="material-symbols-outlined text-[16px]">menu_book</span>
+        <span>View Full 11-Ingredient Pharmacopeia</span>
+      </button>
+    </section>
+
+    <!-- MODAL: Full Pharmacopeia -->
+    <div id="pharmacopeia-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+      <div class="bg-surface max-w-[380px] w-full rounded-2xl p-5 border border-outline-variant/80 shadow-2xl max-h-[85vh] overflow-y-auto space-y-4">
+        <div class="flex justify-between items-center border-b border-outline-variant/40 pb-3">
+          <div>
+            <h3 class="font-headline-md text-base text-primary font-bold">11 Botanical Actives</h3>
+            <p class="text-[10px] text-secondary font-medium">Full Disclosed Ayurvedic Formulation</p>
+          </div>
+          <button onclick="toggleModal('pharmacopeia-modal')" class="text-on-surface-variant p-1 rounded-full hover:bg-surface-container">
+            <span class="material-symbols-outlined text-[20px]">close</span>
+          </button>
+        </div>
+
+        <p class="text-xs text-on-surface-variant leading-relaxed">
+          Every batch is prepared with slow manual maceration in pure cold-pressed sesame and coconut oil bases:
+        </p>
+
+        <ul class="text-xs space-y-2 text-on-surface divide-y divide-outline-variant/20">
+          <li class="pt-1.5"><strong>1. Bhringraj (Eclipta alba):</strong> King of hair vitality and root anchorage.</li>
+          <li class="pt-1.5"><strong>2. Amla (Phyllanthus emblica):</strong> Vitamin C natural shield against damage.</li>
+          <li class="pt-1.5"><strong>3. Shikakai (Acacia concinna):</strong> Natural surfactant for mild cleansing.</li>
+          <li class="pt-1.5"><strong>4. Reetha (Sapindus mukorossi):</strong> Pure botanical saponin soapnut.</li>
+          <li class="pt-1.5"><strong>5. Rosemary (Rosmarinus officinalis):</strong> Aromatic follicular stimulant.</li>
+          <li class="pt-1.5"><strong>6. Jatamansi (Nardostachys jatamansi):</strong> Root strengthener and scalp calmer.</li>
+          <li class="pt-1.5"><strong>7. Neem (Azadirachta indica):</strong> Anti-microbial dandruff protection.</li>
+          <li class="pt-1.5"><strong>8. Brahmi (Bacopa monnieri):</strong> Scalp cooling and texture conditioner.</li>
+          <li class="pt-1.5"><strong>9. Methi (Fenugreek):</strong> Protein & nicotinic acid strand repair.</li>
+          <li class="pt-1.5"><strong>10. Curry Leaves (Murraya koenigii):</strong> Natural pigment and luster preserver.</li>
+          <li class="pt-1.5"><strong>11. Vetiver (Khus):</strong> Cooling herbal aromatic balance.</li>
+        </ul>
+
+        <button onclick="toggleModal('pharmacopeia-modal')" class="w-full py-2.5 bg-primary text-white rounded-xl text-xs font-bold shadow-2xs mt-2">
+          Close Pharmacopeia
+        </button>
+      </div>
+    </div>
+
+    <!-- 09. REAL CUSTOMER STORIES -->
+    <section class="p-4 space-y-3.5" id="reviews">
+      <div class="flex justify-between items-end">
+        <div>
+          <span class="font-bold text-secondary uppercase tracking-widest text-[10px]">COMMUNITY EXPERIENCE</span>
+          <h2 class="font-headline-md text-primary text-xl sm:text-2xl font-bold mt-0.5">Real Customer Stories</h2>
+        </div>
+        <div class="flex items-center gap-1 bg-surface-container-low border border-outline-variant/40 px-2.5 py-1 rounded-md text-xs font-bold text-primary shadow-2xs">
+          <span class="material-symbols-outlined text-[14px] text-yellow-600">star</span>
+          <span>4.9 / 5</span>
+        </div>
+      </div>
+
+      <div class="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-3 pt-1 no-scrollbar -mx-4 px-4 scroll-smooth">
+        <div class="w-[82%] sm:w-[300px] shrink-0 snap-start rounded-2xl bg-surface-container-lowest border border-outline-variant/50 p-4 shadow-2xs space-y-2.5 flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-primary text-sm">Sunita Patel</h3>
+              <span class="text-outline text-[10px] font-medium">Hyderabad</span>
+            </div>
+            <div class="flex text-yellow-600 text-xs">★★★★★</div>
+            <p class="text-xs text-on-surface leading-snug">
+              "The hair oil has an authentic natural herbal aroma. After 4 weeks of consistent overnight application, hair fall is noticeably reduced."
+            </p>
+          </div>
+          <p class="text-[10px] text-secondary font-bold uppercase tracking-wider pt-2 border-t border-outline-variant/30">
+            Verified User • Hair Oil 100ml
+          </p>
+        </div>
+
+        <div class="w-[82%] sm:w-[300px] shrink-0 snap-start rounded-2xl bg-surface-container-lowest border border-outline-variant/50 p-4 shadow-2xs space-y-2.5 flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-primary text-sm">Rohit Kulkarni</h3>
+              <span class="text-outline text-[10px] font-medium">Pune</span>
+            </div>
+            <div class="flex text-yellow-600 text-xs">★★★★★</div>
+            <p class="text-xs text-on-surface leading-snug">
+              "Lathers gently without stripping natural moisture. Remembering to dilute with water first in a small bowl made all the difference!"
+            </p>
+          </div>
+          <p class="text-[10px] text-secondary font-bold uppercase tracking-wider pt-2 border-t border-outline-variant/30">
+            Verified User • Shampoo 180ml
+          </p>
+        </div>
+
+        <div class="w-[82%] sm:w-[300px] shrink-0 snap-start rounded-2xl bg-surface-container-lowest border border-outline-variant/50 p-4 shadow-2xs space-y-2.5 flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-primary text-sm">Ananya Nair</h3>
+              <span class="text-outline text-[10px] font-medium">Bengaluru</span>
+            </div>
+            <div class="flex text-yellow-600 text-xs">★★★★★</div>
+            <p class="text-xs text-on-surface leading-snug">
+              "The Sunday ritual with Re-Growth powder + 2 Vitamin E capsules is a game changer for scalp comfort and soft baby hairs."
+            </p>
+          </div>
+          <p class="text-[10px] text-secondary font-bold uppercase tracking-wider pt-2 border-t border-outline-variant/30">
+            Verified User • Complete Routine
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. BATCH A: "DRAG TO SEE TRANSFORMATION" BEFORE/AFTER SLIDER -->
+    <section class="p-4 bg-surface-container-low border-y border-outline-variant/60 space-y-4 my-2" id="transformation">
+      <div>
+        <span class="font-bold text-secondary uppercase tracking-widest text-[10px]">REAL RESULTS</span>
+        <h2 class="font-headline-md text-primary text-xl sm:text-2xl font-bold mt-0.5">Drag to See the Transformation</h2>
+        <p class="text-on-surface-variant text-xs sm:text-sm mt-0.5 leading-relaxed">
+          Slide the handle to compare results from consistent use over 8 weeks.
+        </p>
+      </div>
+
+      <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md select-none touch-pan-y" id="ba-container">
+        <img src="assets/images/results/after-week8.webp" 
+             alt="After 8 Weeks Hair Transformation" 
+             class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop';" />
+        <span class="absolute top-3 right-3 bg-primary/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider backdrop-blur-xs shadow-2xs pointer-events-none">
+          AFTER • WEEK 8
+        </span>
+
+        <div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none" id="ba-clipped-layer" style="clip-path: inset(0 50% 0 0);">
+          <img src="assets/images/results/before-week1.webp" 
+               alt="Before Treatment Hair Condition" 
+               class="absolute inset-0 w-full h-full object-cover max-w-none"
+               style="width: 100%; height: 100%;"
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800&auto=format&fit=crop';" />
+          <span class="absolute top-3 left-3 bg-black/70 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider backdrop-blur-xs shadow-2xs pointer-events-none">
+            BEFORE
+          </span>
+        </div>
+
+        <div class="absolute top-0 bottom-0 w-0.5 bg-white shadow-md cursor-ew-resize flex items-center justify-center z-10" id="ba-handle" style="left: 50%;">
+          <div class="w-9 h-9 rounded-full bg-whatsapp text-white flex items-center justify-center shadow-lg border-2 border-white transform -translate-x-1/2 active:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-[18px]">unfold_more</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-2 pt-1">
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Week 1: Scalp Calming</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Scalp irritation reduces and natural oils begin balancing.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Week 2: Reduced Hair Fall</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Hair fall visibly decreases during daily combing and washing.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">4</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Week 4: Micro Baby Hairs</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">New baby hairs start appearing along the hairline and crown.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-2xs">
+          <span class="w-6 h-6 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">8</span>
+          <div>
+            <h3 class="text-xs font-bold text-primary">Week 8: Visible Density & Thickness</h3>
+            <p class="text-[11px] text-on-surface-variant leading-snug mt-0.5">Noticeably stronger, denser, and healthier overall hair strands.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. BATCH B: ANIMATED STEP-BY-STEP QUIZ WIZARD -->
+    <section class="p-4 bg-surface-container-low border-y border-outline-variant/60 space-y-4 my-2" id="quiz-wizard">
+      <div>
+        <span class="inline-block text-[10px] font-bold uppercase tracking-widest text-primary bg-secondary-container px-2.5 py-0.5 rounded-md border border-primary/10">
+          60-SECOND QUIZ
+        </span>
+        <h2 class="font-headline-md text-primary text-xl sm:text-2xl font-bold mt-1">Find Your Perfect Match</h2>
+        <p class="text-on-surface-variant text-xs sm:text-sm mt-0.5 leading-relaxed">
+          Answer 3 quick questions and get a personalized recommendation.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-between border-b border-outline-variant/40 pb-3">
+        <span id="quiz-step-label" class="text-xs font-bold text-primary">Step 1 of 3</span>
+        <div class="flex items-center gap-1.5">
+          <div id="step-dot-1" class="w-6 h-1.5 rounded-full bg-primary transition-all duration-300"></div>
+          <div id="step-dot-2" class="w-2 h-1.5 rounded-full bg-outline-variant/60 transition-all duration-300"></div>
+          <div id="step-dot-3" class="w-2 h-1.5 rounded-full bg-outline-variant/60 transition-all duration-300"></div>
+        </div>
+      </div>
+
+      <div id="quiz-step-1" class="space-y-3 transition-opacity duration-300">
+        <h3 class="text-xs font-bold text-primary">What's your main hair concern?</h3>
+        <div class="space-y-2">
+          <label onclick="selectQuizOption(1, 'Hair Fall', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-primary bg-secondary-container/20 text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>Hair Fall & Thinning</span>
+            <input type="radio" name="q1" class="accent-primary" checked />
+          </label>
+          <label onclick="selectQuizOption(1, 'Slow Growth', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-outline-variant/60 bg-surface-container-lowest text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>Slow Growth & Patchy Hairline</span>
+            <input type="radio" name="q1" class="accent-primary" />
+          </label>
+          <label onclick="selectQuizOption(1, 'Dryness', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-outline-variant/60 bg-surface-container-lowest text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>Dryness & Frizz</span>
+            <input type="radio" name="q1" class="accent-primary" />
+          </label>
+          <label onclick="selectQuizOption(1, 'Dandruff', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-outline-variant/60 bg-surface-container-lowest text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>Dandruff & Scalp Itchiness</span>
+            <input type="radio" name="q1" class="accent-primary" />
+          </label>
+        </div>
+        <button onclick="nextQuizStep(2)" class="w-full py-2.5 rounded-xl bg-primary text-white text-xs font-bold shadow-2xs hover:bg-primary-container transition-all">
+          Next Step →
+        </button>
+      </div>
+
+      <div id="quiz-step-2" class="hidden space-y-3 transition-opacity duration-300">
+        <h3 class="text-xs font-bold text-primary">What is your scalp / hair type?</h3>
+        <div class="space-y-2">
+          <label onclick="selectQuizOption(2, 'Oily Scalp', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-primary bg-secondary-container/20 text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>Oily Scalp</span>
+            <input type="radio" name="q2" class="accent-primary" checked />
+          </label>
+          <label onclick="selectQuizOption(2, 'Dry Scalp', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-outline-variant/60 bg-surface-container-lowest text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>Dry / Sensitive Scalp</span>
+            <input type="radio" name="q2" class="accent-primary" />
+          </label>
+          <label onclick="selectQuizOption(2, 'Normal Scalp', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-outline-variant/60 bg-surface-container-lowest text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>Normal Scalp</span>
+            <input type="radio" name="q2" class="accent-primary" />
+          </label>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="nextQuizStep(1)" class="w-1/3 py-2.5 rounded-xl border border-outline-variant/60 bg-surface-container text-on-surface-variant text-xs font-bold">
+            ← Back
+          </button>
+          <button onclick="nextQuizStep(3)" class="w-2/3 py-2.5 rounded-xl bg-primary text-white text-xs font-bold shadow-2xs hover:bg-primary-container transition-all">
+            Next Step →
+          </button>
+        </div>
+      </div>
+
+      <div id="quiz-step-3" class="hidden space-y-3 transition-opacity duration-300">
+        <h3 class="text-xs font-bold text-primary">How often do you wash your hair?</h3>
+        <div class="space-y-2">
+          <label onclick="selectQuizOption(3, '1-2 times a week', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-primary bg-secondary-container/20 text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>1–2 times a week</span>
+            <input type="radio" name="q3" class="accent-primary" checked />
+          </label>
+          <label onclick="selectQuizOption(3, '3-4 times a week', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-outline-variant/60 bg-surface-container-lowest text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>3–4 times a week</span>
+            <input type="radio" name="q3" class="accent-primary" />
+          </label>
+          <label onclick="selectQuizOption(3, 'Daily', this)" class="quiz-option flex items-center justify-between p-3 rounded-xl border border-outline-variant/60 bg-surface-container-lowest text-xs font-semibold text-primary cursor-pointer transition-all hover:border-primary shadow-2xs">
+            <span>Daily or alternate days</span>
+            <input type="radio" name="q3" class="accent-primary" />
+          </label>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="nextQuizStep(2)" class="w-1/3 py-2.5 rounded-xl border border-outline-variant/60 bg-surface-container text-on-surface-variant text-xs font-bold">
+            ← Back
+          </button>
+          <button onclick="finishQuiz()" class="w-2/3 py-2.5 rounded-xl bg-whatsapp text-white text-xs font-bold shadow-2xs hover:bg-whatsapp-hover transition-all">
+            See My Result 🎉
+          </button>
+        </div>
+      </div>
+
+      <div id="quiz-result" class="hidden p-4 rounded-xl bg-surface-container-lowest border-2 border-primary/80 shadow-md space-y-3">
+        <div class="flex items-center gap-2 text-primary font-bold text-sm">
+          <span class="material-symbols-outlined text-whatsapp text-[20px]">verified</span>
+          <span>Your Custom Hair Care Routine</span>
+        </div>
+
+        <div class="space-y-1 text-xs text-on-surface-variant">
+          <p id="quiz-summary" class="font-medium text-primary">Targeting: Hair Fall • Dry Scalp</p>
+          <p id="quiz-rec-detail" class="leading-relaxed">
+            Based on your selection, we recommend the <strong>Complete Hair Care Routine</strong> for maximum root nourishment.
+          </p>
+        </div>
+
+        <button onclick="showCartDrawer()" class="h-11 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-xs font-bold flex items-center justify-center gap-2 shadow-2xs transition-all active:scale-[0.98]">
+          <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+          <span>Order Custom Routine via Cart</span>
+        </button>
+
+        <button onclick="resetQuiz()" class="w-full text-center text-[11px] font-bold text-secondary hover:underline pt-1">
+          Retake Quiz ↺
+        </button>
+      </div>
+    </section>
+
+    <!-- 12. FAQ ACCORDIONS -->
+    <section class="p-4 space-y-3.5 my-2" id="faqs">
+      <div>
+        <span class="font-bold text-secondary uppercase tracking-widest text-[10px]">PRE-PURCHASE CLARITY</span>
+        <h2 class="font-headline-md text-primary text-xl sm:text-2xl font-bold mt-0.5">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-2">
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-lowest overflow-hidden shadow-2xs">
+          <button onclick="toggleFaq('faq-1')" class="w-full p-3.5 text-left flex justify-between items-center gap-2 font-bold text-xs sm:text-sm text-primary">
+            <span>What ingredients are used in Harshali products?</span>
+            <span id="faq-1-icon" class="material-symbols-outlined text-secondary text-[20px] transition-transform duration-300">expand_more</span>
+          </button>
+          <div id="faq-1" class="hidden px-3.5 pb-3.5 text-xs text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-2">
+            We use 100% natural Ayurvedic herbs like Amla, Bhringraj, Rosemary, Shikakai, Reetha, and fresh curry leaves.
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-lowest overflow-hidden shadow-2xs">
+          <button onclick="toggleFaq('faq-2')" class="w-full p-3.5 text-left flex justify-between items-center gap-2 font-bold text-xs sm:text-sm text-primary">
+            <span>Are these formulations suitable for regular use?</span>
+            <span id="faq-2-icon" class="material-symbols-outlined text-secondary text-[20px] transition-transform duration-300">expand_more</span>
+          </button>
+          <div id="faq-2" class="hidden px-3.5 pb-3.5 text-xs text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-2">
+            Yes, our products are crafted for regular hair-care routines (e.g., hair oil 3–4 times weekly).
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-lowest overflow-hidden shadow-2xs">
+          <button onclick="toggleFaq('faq-3')" class="w-full p-3.5 text-left flex justify-between items-center gap-2 font-bold text-xs sm:text-sm text-primary">
+            <span>How do I use the Harshali Shampoo properly?</span>
+            <span id="faq-3-icon" class="material-symbols-outlined text-secondary text-[20px] transition-transform duration-300">expand_more</span>
+          </button>
+          <div id="faq-3" class="hidden px-3.5 pb-3.5 text-xs text-on-surface leading-relaxed border-t border-outline-variant/30 pt-2 bg-secondary-container/20 font-medium">
+            <strong>MANDATORY:</strong> Always dilute required shampoo quantity with water in a bowl first.
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-lowest overflow-hidden shadow-2xs">
+          <button onclick="toggleFaq('faq-4')" class="w-full p-3.5 text-left flex justify-between items-center gap-2 font-bold text-xs sm:text-sm text-primary">
+            <span>How do I place an order via WhatsApp?</span>
+            <span id="faq-4-icon" class="material-symbols-outlined text-secondary text-[20px] transition-transform duration-300">expand_more</span>
+          </button>
+          <div id="faq-4" class="hidden px-3.5 pb-3.5 text-xs text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-2">
+            Tap any WhatsApp button, select your product/size, share delivery address, and confirm payment via UPI.
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-lowest overflow-hidden shadow-2xs">
+          <button onclick="toggleFaq('faq-5')" class="w-full p-3.5 text-left flex justify-between items-center gap-2 font-bold text-xs sm:text-sm text-primary">
+            <span>What are shipping charges and timelines?</span>
+            <span id="faq-5-icon" class="material-symbols-outlined text-secondary text-[20px] transition-transform duration-300">expand_more</span>
+          </button>
+          <div id="faq-5" class="hidden px-3.5 pb-3.5 text-xs text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-2">
+            Shipping charges depend on location and parcel weight. Orders dispatch within 2–3 business days.
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-outline-variant/60 bg-surface-container-lowest overflow-hidden shadow-2xs">
+          <button onclick="toggleFaq('faq-6')" class="w-full p-3.5 text-left flex justify-between items-center gap-2 font-bold text-xs sm:text-sm text-primary">
+            <span>What payment methods are accepted?</span>
+            <span id="faq-6-icon" class="material-symbols-outlined text-secondary text-[20px] transition-transform duration-300">expand_more</span>
+          </button>
+          <div id="faq-6" class="hidden px-3.5 pb-3.5 text-xs text-on-surface-variant leading-relaxed border-t border-outline-variant/30 pt-2">
+            We accept instant UPI payments via official QR code shared during WhatsApp chat confirmation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. FINAL CONVERSION BANNER -->
+    <section class="p-6 bg-primary text-white text-center space-y-4 my-4 rounded-2xl mx-3 shadow-lg relative overflow-hidden" id="final-cta">
+      <div class="max-w-md mx-auto space-y-3 relative z-10">
+        <span class="inline-block text-[10px] font-bold uppercase tracking-widest text-secondary-container bg-primary-container/80 px-3 py-1 rounded-full border border-secondary-container/20">
+          Start Your Routine
+        </span>
+
+        <h2 class="font-headline-md text-2xl sm:text-3xl font-bold tracking-tight text-white leading-tight">
+          Ready to Start Your Routine?
+        </h2>
+
+        <p class="text-xs sm:text-sm text-surface-container-low/90 leading-relaxed max-w-xs mx-auto">
+          Choose your products and connect with us directly on WhatsApp to place your order.
+        </p>
+
+        <div class="pt-2 flex flex-col gap-2.5">
+          <button onclick="showCartDrawer()" class="h-12 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.98]">
+            <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+            <span>View Cart & Checkout</span>
+          </button>
+
+          <a href="#products" class="text-xs font-bold text-surface-container-low hover:text-white transition-colors flex items-center justify-center gap-1 py-1">
+            <span>Explore Products</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="pt-4 border-t border-primary-container/80 grid grid-cols-3 gap-1 text-[10px] text-secondary-container font-medium">
+          <div class="flex flex-col items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">support_agent</span>
+            <span>Direct Support</span>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">touch_app</span>
+            <span>Easy Ordering</span>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">local_shipping</span>
+            <span>Shipping Info</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. REDESIGNED FOOTER -->
+    <footer class="p-5 bg-primary text-on-primary space-y-5 border-t border-primary-container/40" id="contact">
+      <div class="space-y-2 text-center border-b border-primary-container/40 pb-5">
+        <div class="flex items-center justify-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary shrink-0">
+            <svg class="h-4 w-4 text-primary" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M45 12C28 12 14 26 14 43C14 60 28 74 45 74C56 74 66 68 71 59C61 65 48 65 39 58C30 51 27 38 33 28C38 19 48 14 59 15C54 13 49.5 12 45 12Z" fill="#1E3A1A"/>
+            </svg>
+          </div>
+          <h3 class="font-headline-md text-lg font-bold text-white tracking-tight">Harshali Herbal</h3>
+        </div>
+
+        <p class="text-xs text-secondary-container font-medium italic">Herbal Roots, Health Results.</p>
+        <p class="text-xs text-surface-container-low/80 max-w-xs mx-auto leading-relaxed">
+          Herbal-inspired hair and personal-care products thoughtfully prepared for your everyday routine.
+        </p>
+        
+        <p class="text-[11px] text-secondary-container font-medium pt-1">
+          A customer-facing brand of <strong>Harshali Enterprises</strong>.
+        </p>
+      </div>
+
+      <div class="space-y-2 border-b border-primary-container/40 pb-5">
+        <div class="border-b border-primary-container/30 pb-2">
+          <button onclick="toggleFooterAcc('acc-shop')" class="w-full flex justify-between items-center text-xs font-bold uppercase tracking-wider text-secondary-container py-1">
+            <span>Shop</span>
+            <span id="acc-shop-icon" class="material-symbols-outlined text-[16px]">add</span>
+          </button>
+          <ul id="acc-shop-body" class="hidden space-y-1.5 text-xs text-surface-container-low/80 pt-2 pb-1">
+            <li><a href="#products" class="hover:text-white transition-colors">Products</a></li>
+            <li><a href="#combos" class="hover:text-white transition-colors">Combos</a></li>
+          </ul>
+        </div>
+
+        <div class="border-b border-primary-container/30 pb-2">
+          <button onclick="toggleFooterAcc('acc-discover')" class="w-full flex justify-between items-center text-xs font-bold uppercase tracking-wider text-secondary-container py-1">
+            <span>Discover</span>
+            <span id="acc-discover-icon" class="material-symbols-outlined text-[16px]">add</span>
+          </button>
+          <ul id="acc-discover-body" class="hidden space-y-1.5 text-xs text-surface-container-low/80 pt-2 pb-1">
+            <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#routine" class="hover:text-white transition-colors">How to Use</a></li>
+            <li><a href="#ingredients" class="hover:text-white transition-colors">Ingredients</a></li>
+            <li><a href="#faqs" class="hover:text-white transition-colors">FAQs</a></li>
+            <li><a href="#reviews" class="hover:text-white transition-colors">Customer Stories</a></li>
+          </ul>
+        </div>
+
+        <div class="border-b border-primary-container/30 pb-2">
+          <button onclick="toggleFooterAcc('acc-help')" class="w-full flex justify-between items-center text-xs font-bold uppercase tracking-wider text-secondary-container py-1">
+            <span>Help</span>
+            <span id="acc-help-icon" class="material-symbols-outlined text-[16px]">add</span>
+          </button>
+          <ul id="acc-help-body" class="hidden space-y-1.5 text-xs text-surface-container-low/80 pt-2 pb-1">
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Shipping & Delivery</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Return / Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="pt-2 text-center space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-secondary-container block">Connect</span>
+          <div class="flex flex-col items-center gap-1.5 text-xs text-surface-container-low/90">
+            <a class="inline-flex items-center gap-1.5 bg-whatsapp hover:bg-whatsapp-hover text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-2xs transition-all"
+               href="https://wa.me/917671080575?text=Hello%20Harshali%20Herbal,%20I%20want%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[15px]">chat</span>
+              <span>+91 7671080575</span>
+            </a>
+            <a href="mailto:harshalienterprises222@gmail.com" class="hover:underline text-[11px] pt-0.5">harshalienterprises222@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-center text-[10px] text-surface-container-low/70">
+        <div class="flex flex-wrap justify-center gap-x-3 gap-y-1">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <span>•</span>
+          <a href="#" class="hover:text-white transition-colors">Terms & Conditions</a>
+          <span>•</span>
+          <a href="#" class="hover:text-white transition-colors">Shipping & Delivery</a>
+          <span>•</span>
+          <a href="#" class="hover:text-white transition-colors">Return / Refund</a>
+        </div>
+
+        <p class="pt-1">
+          © 2026 Harshali Herbal. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- 15. PERSISTENT FIXED BOTTOM CONVERSION BAR -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 flex justify-center pointer-events-none">
+      <div class="w-full max-w-[420px] p-3 bg-surface/95 backdrop-blur-md border-t border-outline-variant/80 pointer-events-auto shadow-2xl">
+        <button onclick="showCartDrawer()" class="h-12 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg transition-all active:scale-[0.98]">
+          <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+          <span id="bottom-bar-text" class="tracking-wide">Checkout • ₹399 →</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 16. BATCH C: SLIDE-UP CART DRAWER & OVERLAY -->
+    <div id="cart-drawer-overlay" 
+         onclick="closeCartDrawer(event)"
+         class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs transition-opacity duration-300 opacity-0 pointer-events-none flex items-end justify-center">
+      
+      <div id="cart-drawer-sheet" 
+           onclick="event.stopPropagation()"
+           class="w-full max-w-[420px] bg-surface rounded-t-3xl border-t border-outline-variant/80 shadow-2xl transition-transform duration-300 transform translate-y-full flex flex-col max-h-[85vh] overflow-hidden">
+        
+        <div class="p-4 border-b border-outline-variant/40 flex justify-between items-center bg-surface-container-low shrink-0">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[22px]">shopping_bag</span>
+            <h3 class="font-headline-md text-base text-primary font-bold">Your Cart</h3>
+            <span id="cart-drawer-count-badge" class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full">1</span>
+          </div>
+          <button onclick="hideCartDrawer()" class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container active:scale-95 transition-transform">
+            <span class="material-symbols-outlined text-[20px]">close</span>
+          </button>
+        </div>
+
+        <div class="p-4 overflow-y-auto space-y-3 flex-1" id="cart-drawer-items">
+          <div class="p-3 bg-surface-container-lowest rounded-2xl border border-outline-variant/50 shadow-2xs flex items-center justify-between gap-3">
+            <div class="w-16 h-16 rounded-xl bg-surface-container overflow-hidden shrink-0">
+              <img src="assets/images/products/hair-oil.webp" 
+                   alt="Harshali Herbal Hair Oil" 
+                   class="w-full h-full object-cover"
+                   onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBOvwEwoFzw3A9AP9RG4f7U55IgGsymiBsQ1ilavN2HqPTVC6g1UJhpzK8QYLI3zVRQXT1hWrfEuKQQJFbPNkXG00Qh9kimEXF8Vi7TLplnlWXYardxQ9SO62DyKyL8e5KuqMa-OhRWJmVl32X6375w59gpGa_rlFVuijlpeCFrxln7gO0qSoMO_kjiRguAd45H2oA2AhePvis2dj93UYUWl-fOLmy3eQqUPqFL-zkxvSmGi_vK70phUQ';" />
+            </div>
+
+            <div class="flex-1 space-y-0.5">
+              <h4 class="font-bold text-xs text-primary leading-tight">Harshali Herbal Hair Oil</h4>
+              <p class="text-[10px] text-secondary font-medium">100 ml Bottle</p>
+              <span class="font-bold text-xs text-primary block pt-0.5">₹399</span>
+            </div>
+
+            <div class="flex items-center gap-2 bg-surface-container px-2 py-1 rounded-xl border border-outline-variant/40">
+              <button onclick="updateCartQuantity(-1)" class="w-6 h-6 rounded-lg bg-surface flex items-center justify-center text-primary font-bold shadow-2xs active:scale-90 transition-transform">
+                -
+              </button>
+              <span id="cart-item-qty" class="text-xs font-bold text-primary w-4 text-center transition-transform duration-150 inline-block">1</span>
+              <button onclick="updateCartQuantity(1)" class="w-6 h-6 rounded-lg bg-surface flex items-center justify-center text-primary font-bold shadow-2xs active:scale-90 transition-transform">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 border-t border-outline-variant/40 bg-surface-container-low shrink-0 space-y-3">
+          <div class="flex justify-between items-center text-xs">
+            <span class="text-on-surface-variant font-medium">Subtotal</span>
+            <span id="cart-drawer-subtotal" class="font-bold text-sm text-primary">₹399</span>
+          </div>
+          
+          <p class="text-[10px] text-secondary text-center font-medium">
+            FREE delivery across India • 100% secure direct payment
+          </p>
+
+          <a id="cart-drawer-checkout-btn"
+             class="h-12 w-full rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.98]"
+             href="https://wa.me/917671080575?text=Hello%20Harshali%20Herbal,%20I%20want%20to%20checkout%20my%20cart%20(1x%20Hair%20Oil%20100ml%20-%20₹399)"
+             target="_blank" rel="noopener noreferrer">
+            <span>Proceed to WhatsApp Checkout →</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- CONSOLIDATED JAVASCRIPT CONTROLLERS -->
+  <script>
+    // 1. Before/After Drag Slider
+    (function initBeforeAfterSlider() {
+      const container = document.getElementById('ba-container');
+      const clippedLayer = document.getElementById('ba-clipped-layer');
+      const handle = document.getElementById('ba-handle');
+      let isDragging = false;
+
+      function setSliderPosition(x) {
+        const rect = container.getBoundingClientRect();
+        let offsetX = x - rect.left;
+        if (offsetX < 0) offsetX = 0;
+        if (offsetX > rect.width) offsetX = rect.width;
+
+        const percentage = (offsetX / rect.width) * 100;
+        const insetRight = 100 - percentage;
+
+        clippedLayer.style.clipPath = `inset(0 ${insetRight}% 0 0)`;
+        handle.style.left = `${percentage}%`;
+      }
+
+      container.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        setSliderPosition(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        setSliderPosition(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchend', () => { isDragging = false; });
+
+      container.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        setSliderPosition(e.clientX);
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        setSliderPosition(e.clientX);
+      });
+
+      window.addEventListener('mouseup', () => { isDragging = false; });
+    })();
+
+    // 2. Animated Step Quiz Wizard
+    const quizAnswers = {
+      concern: 'Hair Fall',
+      scalp: 'Oily Scalp',
+      frequency: '1-2 times a week'
+    };
+
+    function selectQuizOption(step, value, element) {
+      if (step === 1) quizAnswers.concern = value;
+      if (step === 2) quizAnswers.scalp = value;
+      if (step === 3) quizAnswers.frequency = value;
+
+      const parent = element.parentElement;
+      parent.querySelectorAll('.quiz-option').forEach(el => {
+        el.classList.remove('border-primary', 'bg-secondary-container/20');
+        el.classList.add('border-outline-variant/60', 'bg-surface-container-lowest');
+      });
+      element.classList.add('border-primary', 'bg-secondary-container/20');
+      element.classList.remove('border-outline-variant/60', 'bg-surface-container-lowest');
+    }
+
+    function nextQuizStep(stepTarget) {
+      document.getElementById('quiz-step-1').classList.add('hidden');
+      document.getElementById('quiz-step-2').classList.add('hidden');
+      document.getElementById('quiz-step-3').classList.add('hidden');
+      document.getElementById('quiz-result').classList.add('hidden');
+
+      document.getElementById(`quiz-step-${stepTarget}`).classList.remove('hidden');
+      document.getElementById('quiz-step-label').textContent = `Step ${stepTarget} of 3`;
+
+      for (let i = 1; i <= 3; i++) {
+        const dot = document.getElementById(`step-dot-${i}`);
+        if (i === stepTarget) {
+          dot.className = 'w-6 h-1.5 rounded-full bg-primary transition-all duration-300';
+        } else {
+          dot.className = 'w-2 h-1.5 rounded-full bg-outline-variant/60 transition-all duration-300';
+        }
+      }
+    }
+
+    function finishQuiz() {
+      document.getElementById('quiz-step-1').classList.add('hidden');
+      document.getElementById('quiz-step-2').classList.add('hidden');
+      document.getElementById('quiz-step-3').classList.add('hidden');
+      document.getElementById('quiz-result').classList.remove('hidden');
+
+      document.getElementById('quiz-step-label').textContent = `Recommendation Ready`;
+      document.getElementById('quiz-summary').textContent = `Targeting: ${quizAnswers.concern} • ${quizAnswers.scalp}`;
+    }
+
+    function resetQuiz() {
+      nextQuizStep(1);
+    }
+
+    // 3. Slide-Up Cart Drawer State & Spring Animation
+    let cartState = {
+      quantity: 1,
+      unitPrice: 399
+    };
+
+    function showCartDrawer() {
+      const overlay = document.getElementById('cart-drawer-overlay');
+      const sheet = document.getElementById('cart-drawer-sheet');
+      
+      overlay.classList.remove('pointer-events-none', 'opacity-0');
+      overlay.classList.add('opacity-100');
+      sheet.classList.remove('translate-y-full');
+    }
+
+    function hideCartDrawer() {
+      const overlay = document.getElementById('cart-drawer-overlay');
+      const sheet = document.getElementById('cart-drawer-sheet');
+      
+      sheet.classList.add('translate-y-full');
+      overlay.classList.remove('opacity-100');
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    function closeCartDrawer(e) {
+      if (e.target.id === 'cart-drawer-overlay') {
+        hideCartDrawer();
+      }
+    }
+
+    function updateCartQuantity(change) {
+      cartState.quantity += change;
+      if (cartState.quantity < 1) cartState.quantity = 1;
+
+      const qtyEl = document.getElementById('cart-item-qty');
+      
+      qtyEl.style.transform = 'scale(1.35)';
+      setTimeout(() => {
+        qtyEl.style.transform = 'scale(1.0)';
+      }, 150);
+
+      qtyEl.textContent = cartState.quantity;
+      document.getElementById('cart-drawer-count-badge').textContent = cartState.quantity;
+      document.getElementById('header-cart-badge').textContent = cartState.quantity;
+      
+      const subtotal = cartState.quantity * cartState.unitPrice;
+      document.getElementById('cart-drawer-subtotal').textContent = `₹${subtotal}`;
+      document.getElementById('bottom-bar-text').textContent = `Checkout • ₹${subtotal} →`;
+
+      const msg = `Hello Harshali Herbal, I want to checkout my cart (${cartState.quantity}x Hair Oil 100ml - ₹${subtotal})`;
+      document.getElementById('cart-drawer-checkout-btn').href = `https://wa.me/917671080575?text=${encodeURIComponent(msg)}`;
+    }
+
+    // 4. Product Category Filter
+    function filterProducts(category) {
+      const pills = ['all', 'hair', 'personal'];
+      pills.forEach(p => {
+        const btn = document.getElementById(`filter-${p}`);
+        if (p === category) {
+          btn.classList.add('bg-primary', 'text-white', 'shadow-2xs');
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        } else {
+          btn.classList.remove('bg-primary', 'text-white', 'shadow-2xs');
+          btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+        }
+      });
+
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.classList.remove('hidden');
+        } else if (category === 'hair') {
+          card.classList.contains('prod-hair') ? card.classList.remove('hidden') : card.classList.add('hidden');
+        } else if (category === 'personal') {
+          card.classList.contains('prod-personal') ? card.classList.remove('hidden') : card.classList.add('hidden');
+        }
+      });
+    }
+
+    // 5. Ritual Protocol Tabs
+    function switchRitual(type) {
+      const tabs = ['oil', 'shampoo', 'powder'];
+      tabs.forEach(t => {
+        const content = document.getElementById(`ritual-${t}`);
+        const btn = document.getElementById(`tab-${t}-btn`);
+        if (t === type) {
+          content.classList.remove('hidden');
+          btn.classList.add('bg-surface', 'text-primary', 'shadow-2xs');
+          btn.classList.remove('text-on-surface-variant');
+        } else {
+          content.classList.add('hidden');
+          btn.classList.remove('bg-surface', 'text-primary', 'shadow-2xs');
+          btn.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+
+    // 6. Combo Size Switchers
+    function updateCombo1(size, price, btn) {
+      document.getElementById('combo1-price').textContent = `₹${price}`;
+      document.querySelectorAll('.combo1-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-white', 'border-primary');
+        b.classList.add('border-outline-variant/60', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary', 'text-white', 'border-primary');
+      btn.classList.remove('border-outline-variant/60', 'text-on-surface-variant');
+    }
+
+    function updateCombo2(size, price, btn) {
+      document.getElementById('combo2-price').textContent = `₹${price}`;
+      document.querySelectorAll('.combo2-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-white', 'border-primary');
+        b.classList.add('border-outline-variant/60', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary', 'text-white', 'border-primary');
+      btn.classList.remove('border-outline-variant/60', 'text-on-surface-variant');
+    }
+
+    // 7. Modal Toggle
+    function toggleModal(id) {
+      document.getElementById(id).classList.toggle('hidden');
+    }
+
+    // 8. FAQ Accordion (Single-Open)
+    function toggleFaq(id) {
+      const el = document.getElementById(id);
+      const icon = document.getElementById(`${id}-icon`);
+      const isHidden = el.classList.contains('hidden');
+
+      for (let i = 1; i <= 6; i++) {
+        const item = document.getElementById(`faq-${i}`);
+        const ic = document.getElementById(`faq-${i}-icon`);
+        if (item) item.classList.add('hidden');
+        if (ic) ic.style.transform = 'rotate(0deg)';
+      }
+
+      if (isHidden) {
+        el.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // 9. Footer Accordion (Auto-Collapse)
+    function toggleFooterAcc(id) {
+      const accs = ['acc-shop', 'acc-discover', 'acc-help'];
+      accs.forEach(acc => {
+        const body = document.getElementById(`${acc}-body`);
+        const icon = document.getElementById(`${acc}-icon`);
+        if (acc === id) {
+          if (body.classList.contains('hidden')) {
+            body.classList.remove('hidden');
+            icon.innerText = 'remove';
+          } else {
+            body.classList.add('hidden');
+            icon.innerText = 'add';
+          }
+        } else {
+          body.classList.add('hidden');
+          icon.innerText = 'add';
+        }
+      });
+    }
+  </script>
 </body>
-
 </html>
